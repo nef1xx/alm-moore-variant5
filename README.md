@@ -20,6 +20,7 @@
 | 8. Канонический структурный синтез | [Коды, таблица, возбуждение RS, выходы](docs/08_hardware.md) | [Общая схема](diagrams/08a_hardware_overview.png) |
 | 9. Программная модель на Python | [Запуск, команды и тестовый пример](docs/09_python.md) | [Временная диаграмма](diagrams/09_timing.png) |
 | 10. Проверка и воспроизводимость | [Что проверено и как повторить](docs/10_verification.md) | [Результат проверки JSON](data/verification.json) |
+| 11. Публикация на GitHub | [Репозиторий, доступ и проверка копии](docs/11_github.md) | [Автоматические проверки](https://github.com/nef1xx/alm-moore-variant5/actions) |
 
 Все 19 схем доступны в [галерее](docs/SCHEMES.md) и [едином PDF-альбоме](output/ALM_variant5_schemes.pdf). Каждая сохранена в **PNG для просмотра и SVG для редактирования**. CSV и JSON лежат в [data](data), формулы и инструкция — в [docs](docs), программа — в [ulu](ulu).
 
