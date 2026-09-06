@@ -1,0 +1,201 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1450" height="1240" viewBox="0 0 1450 1240">
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#17212b"/></marker></defs>
+<rect width="1450" height="1240" fill="white"/>
+<style>text{font-family:Arial,sans-serif;fill:#17212b} .wire{fill:none;stroke:#17212b;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}</style>
+<text x="725.0" y="34" font-size="24" text-anchor="middle" font-weight="bold">Логика переходов — t₁…t₆ и N₂,N₁,N₀</text>
+<text x="725" y="70" font-size="17" text-anchor="middle">Именованные цепи: одинаковые подписи означают электрическое соединение, в том числе между листами.</text>
+<rect x="155" y="128" width="78" height="54" rx="0" fill="white" stroke="#17212b" stroke-width="2"/>
+<text x="194" y="162.0" font-size="23" text-anchor="middle">1</text>
+<path class="wire" d="M123 155.0 H155" style="stroke:#17212b;stroke-width:2"/>
+<text x="116" y="160.0" font-size="16" text-anchor="end">F1</text>
+<circle cx="238" cy="155.0" r="5" fill="white" stroke="#17212b" stroke-width="2"/>
+<path class="wire" d="M243 155.0 H281" style="stroke:#17212b;stroke-width:2"/>
+<text x="290" y="160.0" font-size="17" text-anchor="start">nF1</text>
+<text x="194" y="120" font-size="15" text-anchor="middle" style="fill:#52616f">nF1</text>
+<rect x="630" y="128" width="78" height="54" rx="0" fill="white" stroke="#17212b" stroke-width="2"/>
+<text x="669" y="162.0" font-size="23" text-anchor="middle">1</text>
+<path class="wire" d="M598 155.0 H630" style="stroke:#17212b;stroke-width:2"/>
+<text x="591" y="160.0" font-size="16" text-anchor="end">F2</text>
+<circle cx="713" cy="155.0" r="5" fill="white" stroke="#17212b" stroke-width="2"/>
+<path class="wire" d="M718 155.0 H756" style="stroke:#17212b;stroke-width:2"/>
+<text x="765" y="160.0" font-size="17" text-anchor="start">nF2</text>
+<text x="669" y="120" font-size="15" text-anchor="middle" style="fill:#52616f">nF2</text>
+<rect x="1105" y="128" width="78" height="54" rx="0" fill="white" stroke="#17212b" stroke-width="2"/>
+<text x="1144" y="162.0" font-size="23" text-anchor="middle">1</text>
+<path class="wire" d="M1073 155.0 H1105" style="stroke:#17212b;stroke-width:2"/>
+<text x="1066" y="160.0" font-size="16" text-anchor="end">F3</text>
+<circle cx="1188" cy="155.0" r="5" fill="white" stroke="#17212b" stroke-width="2"/>
+<path class="wire" d="M1193 155.0 H1231" style="stroke:#17212b;stroke-width:2"/>
+<text x="1240" y="160.0" font-size="17" text-anchor="start">nF3</text>
+<text x="1144" y="120" font-size="15" text-anchor="middle" style="fill:#52616f">nF3</text>
+<rect x="155" y="283" width="78" height="58" rx="0" fill="white" stroke="#17212b" stroke-width="2"/>
+<text x="194" y="319.0" font-size="23" text-anchor="middle">&amp;</text>
+<path class="wire" d="M123 302.3333333333333 H155" style="stroke:#17212b;stroke-width:2"/>
+<text x="116" y="307.3333333333333" font-size="16" text-anchor="end">z0</text>
+<path class="wire" d="M123 321.6666666666667 H155" style="stroke:#17212b;stroke-width:2"/>
+<text x="116" y="326.6666666666667" font-size="16" text-anchor="end">nF2</text>
+<path class="wire" d="M233 312.0 H281" style="stroke:#17212b;stroke-width:2"/>
+<text x="290" y="317.0" font-size="17" text-anchor="start">t1</text>
+<text x="194" y="275" font-size="15" text-anchor="middle" style="fill:#52616f">t1</text>
+<rect x="630" y="283" width="78" height="54" rx="0" fill="white" stroke="#17212b" stroke-width="2"/>
+<text x="669" y="317.0" font-size="23" text-anchor="middle">1</text>
+<path class="wire" d="M598 310.0 H630" style="stroke:#17212b;stroke-width:2"/>
+<text x="591" y="315.0" font-size="16" text-anchor="end">z1</text>
+<path class="wire" d="M708 310.0 H756" style="stroke:#17212b;stroke-width:2"/>
+<text x="765" y="315.0" font-size="17" text-anchor="start">t2</text>
+<text x="669" y="275" font-size="15" text-anchor="middle" style="fill:#52616f">t2</text>
+<rect x="1105" y="283" width="78" height="58" rx="0" fill="white" stroke="#17212b" stroke-width="2"/>
+<text x="1144" y="319.0" font-size="23" text-anchor="middle">&amp;</text>
+<path class="wire" d="M1073 302.3333333333333 H1105" style="stroke:#17212b;stroke-width:2"/>
+<text x="1066" y="307.3333333333333" font-size="16" text-anchor="end">z5</text>
+<path class="wire" d="M1073 321.6666666666667 H1105" style="stroke:#17212b;stroke-width:2"/>
+<text x="1066" y="326.6666666666667" font-size="16" text-anchor="end">nF1</text>
+<path class="wire" d="M1183 312.0 H1231" style="stroke:#17212b;stroke-width:2"/>
+<text x="1240" y="317.0" font-size="17" text-anchor="start">h53</text>
+<text x="1144" y="275" font-size="15" text-anchor="middle" style="fill:#52616f">h53</text>
+<rect x="155" y="438" width="78" height="58" rx="0" fill="white" stroke="#17212b" stroke-width="2"/>
+<text x="194" y="474.0" font-size="23" text-anchor="middle">≥1</text>
+<path class="wire" d="M123 457.3333333333333 H155" style="stroke:#17212b;stroke-width:2"/>
+<text x="116" y="462.3333333333333" font-size="16" text-anchor="end">z2</text>
+<path class="wire" d="M123 476.6666666666667 H155" style="stroke:#17212b;stroke-width:2"/>
+<text x="116" y="481.6666666666667" font-size="16" text-anchor="end">h53</text>
+<path class="wire" d="M233 467.0 H281" style="stroke:#17212b;stroke-width:2"/>
+<text x="290" y="472.0" font-size="17" text-anchor="start">h3</text>
+<text x="194" y="430" font-size="15" text-anchor="middle" style="fill:#52616f">h3</text>
+<rect x="630" y="438" width="78" height="58" rx="0" fill="white" stroke="#17212b" stroke-width="2"/>
+<text x="669" y="474.0" font-size="23" text-anchor="middle">&amp;</text>
+<path class="wire" d="M598 457.3333333333333 H630" style="stroke:#17212b;stroke-width:2"/>
+<text x="591" y="462.3333333333333" font-size="16" text-anchor="end">nF2</text>
+<path class="wire" d="M598 476.6666666666667 H630" style="stroke:#17212b;stroke-width:2"/>
+<text x="591" y="481.6666666666667" font-size="16" text-anchor="end">h3</text>
+<path class="wire" d="M708 467.0 H756" style="stroke:#17212b;stroke-width:2"/>
+<text x="765" y="472.0" font-size="17" text-anchor="start">t3</text>
+<text x="669" y="430" font-size="15" text-anchor="middle" style="fill:#52616f">t3</text>
+<rect x="1105" y="438" width="78" height="58" rx="0" fill="white" stroke="#17212b" stroke-width="2"/>
+<text x="1144" y="474.0" font-size="23" text-anchor="middle">≥1</text>
+<path class="wire" d="M1073 457.3333333333333 H1105" style="stroke:#17212b;stroke-width:2"/>
+<text x="1066" y="462.3333333333333" font-size="16" text-anchor="end">F3</text>
+<path class="wire" d="M1073 476.6666666666667 H1105" style="stroke:#17212b;stroke-width:2"/>
+<text x="1066" y="481.6666666666667" font-size="16" text-anchor="end">F1</text>
+<path class="wire" d="M1183 467.0 H1231" style="stroke:#17212b;stroke-width:2"/>
+<text x="1240" y="472.0" font-size="17" text-anchor="start">h41</text>
+<text x="1144" y="430" font-size="15" text-anchor="middle" style="fill:#52616f">h41</text>
+<rect x="155" y="593" width="78" height="81" rx="0" fill="white" stroke="#17212b" stroke-width="2"/>
+<text x="194" y="640.5" font-size="23" text-anchor="middle">&amp;</text>
+<path class="wire" d="M123 613.25 H155" style="stroke:#17212b;stroke-width:2"/>
+<text x="116" y="618.25" font-size="16" text-anchor="end">z2</text>
+<path class="wire" d="M123 633.5 H155" style="stroke:#17212b;stroke-width:2"/>
+<text x="116" y="638.5" font-size="16" text-anchor="end">F2</text>
+<path class="wire" d="M123 653.75 H155" style="stroke:#17212b;stroke-width:2"/>
+<text x="116" y="658.75" font-size="16" text-anchor="end">h41</text>
+<path class="wire" d="M233 633.5 H281" style="stroke:#17212b;stroke-width:2"/>
+<text x="290" y="638.5" font-size="17" text-anchor="start">h42</text>
+<text x="194" y="585" font-size="15" text-anchor="middle" style="fill:#52616f">h42</text>
+<rect x="630" y="593" width="78" height="104" rx="0" fill="white" stroke="#17212b" stroke-width="2"/>
+<text x="669" y="652.0" font-size="23" text-anchor="middle">&amp;</text>
+<path class="wire" d="M598 613.8 H630" style="stroke:#17212b;stroke-width:2"/>
+<text x="591" y="618.8" font-size="16" text-anchor="end">z5</text>
+<path class="wire" d="M598 634.6 H630" style="stroke:#17212b;stroke-width:2"/>
+<text x="591" y="639.6" font-size="16" text-anchor="end">nF1</text>
+<path class="wire" d="M598 655.4 H630" style="stroke:#17212b;stroke-width:2"/>
+<text x="591" y="660.4" font-size="16" text-anchor="end">F2</text>
+<path class="wire" d="M598 676.2 H630" style="stroke:#17212b;stroke-width:2"/>
+<text x="591" y="681.2" font-size="16" text-anchor="end">F3</text>
+<path class="wire" d="M708 645.0 H756" style="stroke:#17212b;stroke-width:2"/>
+<text x="765" y="650.0" font-size="17" text-anchor="start">h43</text>
+<text x="669" y="585" font-size="15" text-anchor="middle" style="fill:#52616f">h43</text>
+<rect x="1105" y="593" width="78" height="81" rx="0" fill="white" stroke="#17212b" stroke-width="2"/>
+<text x="1144" y="640.5" font-size="23" text-anchor="middle">≥1</text>
+<path class="wire" d="M1073 613.25 H1105" style="stroke:#17212b;stroke-width:2"/>
+<text x="1066" y="618.25" font-size="16" text-anchor="end">z3</text>
+<path class="wire" d="M1073 633.5 H1105" style="stroke:#17212b;stroke-width:2"/>
+<text x="1066" y="638.5" font-size="16" text-anchor="end">h42</text>
+<path class="wire" d="M1073 653.75 H1105" style="stroke:#17212b;stroke-width:2"/>
+<text x="1066" y="658.75" font-size="16" text-anchor="end">h43</text>
+<path class="wire" d="M1183 633.5 H1231" style="stroke:#17212b;stroke-width:2"/>
+<text x="1240" y="638.5" font-size="17" text-anchor="start">t4</text>
+<text x="1144" y="585" font-size="15" text-anchor="middle" style="fill:#52616f">t4</text>
+<rect x="155" y="748" width="78" height="58" rx="0" fill="white" stroke="#17212b" stroke-width="2"/>
+<text x="194" y="784.0" font-size="23" text-anchor="middle">≥1</text>
+<path class="wire" d="M123 767.3333333333334 H155" style="stroke:#17212b;stroke-width:2"/>
+<text x="116" y="772.3333333333334" font-size="16" text-anchor="end">z2</text>
+<path class="wire" d="M123 786.6666666666666 H155" style="stroke:#17212b;stroke-width:2"/>
+<text x="116" y="791.6666666666666" font-size="16" text-anchor="end">z5</text>
+<path class="wire" d="M233 777.0 H281" style="stroke:#17212b;stroke-width:2"/>
+<text x="290" y="782.0" font-size="17" text-anchor="start">h51</text>
+<text x="194" y="740" font-size="15" text-anchor="middle" style="fill:#52616f">h51</text>
+<rect x="630" y="748" width="78" height="104" rx="0" fill="white" stroke="#17212b" stroke-width="2"/>
+<text x="669" y="807.0" font-size="23" text-anchor="middle">&amp;</text>
+<path class="wire" d="M598 768.8 H630" style="stroke:#17212b;stroke-width:2"/>
+<text x="591" y="773.8" font-size="16" text-anchor="end">F2</text>
+<path class="wire" d="M598 789.6 H630" style="stroke:#17212b;stroke-width:2"/>
+<text x="591" y="794.6" font-size="16" text-anchor="end">nF3</text>
+<path class="wire" d="M598 810.4 H630" style="stroke:#17212b;stroke-width:2"/>
+<text x="591" y="815.4" font-size="16" text-anchor="end">nF1</text>
+<path class="wire" d="M598 831.2 H630" style="stroke:#17212b;stroke-width:2"/>
+<text x="591" y="836.2" font-size="16" text-anchor="end">h51</text>
+<path class="wire" d="M708 800.0 H756" style="stroke:#17212b;stroke-width:2"/>
+<text x="765" y="805.0" font-size="17" text-anchor="start">h52</text>
+<text x="669" y="740" font-size="15" text-anchor="middle" style="fill:#52616f">h52</text>
+<rect x="1105" y="748" width="78" height="58" rx="0" fill="white" stroke="#17212b" stroke-width="2"/>
+<text x="1144" y="784.0" font-size="23" text-anchor="middle">≥1</text>
+<path class="wire" d="M1073 767.3333333333334 H1105" style="stroke:#17212b;stroke-width:2"/>
+<text x="1066" y="772.3333333333334" font-size="16" text-anchor="end">z4</text>
+<path class="wire" d="M1073 786.6666666666666 H1105" style="stroke:#17212b;stroke-width:2"/>
+<text x="1066" y="791.6666666666666" font-size="16" text-anchor="end">h52</text>
+<path class="wire" d="M1183 777.0 H1231" style="stroke:#17212b;stroke-width:2"/>
+<text x="1240" y="782.0" font-size="17" text-anchor="start">t5</text>
+<text x="1144" y="740" font-size="15" text-anchor="middle" style="fill:#52616f">t5</text>
+<rect x="155" y="903" width="78" height="58" rx="0" fill="white" stroke="#17212b" stroke-width="2"/>
+<text x="194" y="939.0" font-size="23" text-anchor="middle">&amp;</text>
+<path class="wire" d="M123 922.3333333333334 H155" style="stroke:#17212b;stroke-width:2"/>
+<text x="116" y="927.3333333333334" font-size="16" text-anchor="end">z5</text>
+<path class="wire" d="M123 941.6666666666666 H155" style="stroke:#17212b;stroke-width:2"/>
+<text x="116" y="946.6666666666666" font-size="16" text-anchor="end">F1</text>
+<path class="wire" d="M233 932.0 H281" style="stroke:#17212b;stroke-width:2"/>
+<text x="290" y="937.0" font-size="17" text-anchor="start">h61</text>
+<text x="194" y="895" font-size="15" text-anchor="middle" style="fill:#52616f">h61</text>
+<rect x="630" y="903" width="78" height="58" rx="0" fill="white" stroke="#17212b" stroke-width="2"/>
+<text x="669" y="939.0" font-size="23" text-anchor="middle">≥1</text>
+<path class="wire" d="M598 922.3333333333334 H630" style="stroke:#17212b;stroke-width:2"/>
+<text x="591" y="927.3333333333334" font-size="16" text-anchor="end">z6</text>
+<path class="wire" d="M598 941.6666666666666 H630" style="stroke:#17212b;stroke-width:2"/>
+<text x="591" y="946.6666666666666" font-size="16" text-anchor="end">h61</text>
+<path class="wire" d="M708 932.0 H756" style="stroke:#17212b;stroke-width:2"/>
+<text x="765" y="937.0" font-size="17" text-anchor="start">t6</text>
+<text x="669" y="895" font-size="15" text-anchor="middle" style="fill:#52616f">t6</text>
+<rect x="1105" y="903" width="78" height="81" rx="0" fill="white" stroke="#17212b" stroke-width="2"/>
+<text x="1144" y="950.5" font-size="23" text-anchor="middle">≥1</text>
+<path class="wire" d="M1073 923.25 H1105" style="stroke:#17212b;stroke-width:2"/>
+<text x="1066" y="928.25" font-size="16" text-anchor="end">t4</text>
+<path class="wire" d="M1073 943.5 H1105" style="stroke:#17212b;stroke-width:2"/>
+<text x="1066" y="948.5" font-size="16" text-anchor="end">t5</text>
+<path class="wire" d="M1073 963.75 H1105" style="stroke:#17212b;stroke-width:2"/>
+<text x="1066" y="968.75" font-size="16" text-anchor="end">t6</text>
+<path class="wire" d="M1183 943.5 H1231" style="stroke:#17212b;stroke-width:2"/>
+<text x="1240" y="948.5" font-size="17" text-anchor="start">N2</text>
+<text x="1144" y="895" font-size="15" text-anchor="middle" style="fill:#52616f">N2</text>
+<rect x="155" y="1058" width="78" height="81" rx="0" fill="white" stroke="#17212b" stroke-width="2"/>
+<text x="194" y="1105.5" font-size="23" text-anchor="middle">≥1</text>
+<path class="wire" d="M123 1078.25 H155" style="stroke:#17212b;stroke-width:2"/>
+<text x="116" y="1083.25" font-size="16" text-anchor="end">t2</text>
+<path class="wire" d="M123 1098.5 H155" style="stroke:#17212b;stroke-width:2"/>
+<text x="116" y="1103.5" font-size="16" text-anchor="end">t3</text>
+<path class="wire" d="M123 1118.75 H155" style="stroke:#17212b;stroke-width:2"/>
+<text x="116" y="1123.75" font-size="16" text-anchor="end">t6</text>
+<path class="wire" d="M233 1098.5 H281" style="stroke:#17212b;stroke-width:2"/>
+<text x="290" y="1103.5" font-size="17" text-anchor="start">N1</text>
+<text x="194" y="1050" font-size="15" text-anchor="middle" style="fill:#52616f">N1</text>
+<rect x="630" y="1058" width="78" height="81" rx="0" fill="white" stroke="#17212b" stroke-width="2"/>
+<text x="669" y="1105.5" font-size="23" text-anchor="middle">≥1</text>
+<path class="wire" d="M598 1078.25 H630" style="stroke:#17212b;stroke-width:2"/>
+<text x="591" y="1083.25" font-size="16" text-anchor="end">t1</text>
+<path class="wire" d="M598 1098.5 H630" style="stroke:#17212b;stroke-width:2"/>
+<text x="591" y="1103.5" font-size="16" text-anchor="end">t3</text>
+<path class="wire" d="M598 1118.75 H630" style="stroke:#17212b;stroke-width:2"/>
+<text x="591" y="1123.75" font-size="16" text-anchor="end">t5</text>
+<path class="wire" d="M708 1098.5 H756" style="stroke:#17212b;stroke-width:2"/>
+<text x="765" y="1103.5" font-size="17" text-anchor="start">N0</text>
+<text x="669" y="1050" font-size="15" text-anchor="middle" style="fill:#52616f">N0</text>
+<text x="725" y="1222" font-size="17" text-anchor="middle">&amp; — И; ≥1 — ИЛИ; кружок на выходе — НЕ; 1 без кружка — повторитель.</text>
+</svg>

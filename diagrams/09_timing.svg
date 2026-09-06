@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1310" height="795" viewBox="0 0 1310 795">
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#17212b"/></marker></defs>
+<rect width="1310" height="795" fill="white"/>
+<style>text{font-family:Arial,sans-serif;fill:#17212b} .wire{fill:none;stroke:#17212b;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}</style>
+<text x="655.0" y="34" font-size="24" text-anchor="middle" font-weight="bold">Проверочный сценарий — состояния и выходы после фронта CLK</text>
+<path class="wire" d="M140 87 V735" style="stroke:#d9e1e8;stroke-width:1"/>
+<text x="186.5" y="106" font-size="17" text-anchor="middle">0</text>
+<text x="186.5" y="151" font-size="20" text-anchor="middle" font-weight="bold">S0</text>
+<text x="186.5" y="191" font-size="18" text-anchor="middle">—</text>
+<text x="186.5" y="230" font-size="18" text-anchor="middle">—</text>
+<path class="wire" d="M233 87 V735" style="stroke:#d9e1e8;stroke-width:1"/>
+<text x="279.5" y="106" font-size="17" text-anchor="middle">1</text>
+<text x="279.5" y="151" font-size="20" text-anchor="middle" font-weight="bold">S0</text>
+<text x="279.5" y="191" font-size="18" text-anchor="middle">0000</text>
+<text x="279.5" y="230" font-size="18" text-anchor="middle">111</text>
+<path class="wire" d="M326 87 V735" style="stroke:#d9e1e8;stroke-width:1"/>
+<text x="372.5" y="106" font-size="17" text-anchor="middle">2</text>
+<text x="372.5" y="151" font-size="20" text-anchor="middle" font-weight="bold">S1</text>
+<text x="372.5" y="191" font-size="18" text-anchor="middle">0100</text>
+<text x="372.5" y="230" font-size="18" text-anchor="middle">101</text>
+<path class="wire" d="M419 87 V735" style="stroke:#d9e1e8;stroke-width:1"/>
+<text x="465.5" y="106" font-size="17" text-anchor="middle">3</text>
+<text x="465.5" y="151" font-size="20" text-anchor="middle" font-weight="bold">S2</text>
+<text x="465.5" y="191" font-size="18" text-anchor="middle">0100</text>
+<text x="465.5" y="230" font-size="18" text-anchor="middle">101</text>
+<path class="wire" d="M512 87 V735" style="stroke:#d9e1e8;stroke-width:1"/>
+<text x="558.5" y="106" font-size="17" text-anchor="middle">4</text>
+<text x="558.5" y="151" font-size="20" text-anchor="middle" font-weight="bold">S4</text>
+<text x="558.5" y="191" font-size="18" text-anchor="middle">1010</text>
+<text x="558.5" y="230" font-size="18" text-anchor="middle">111</text>
+<path class="wire" d="M605 87 V735" style="stroke:#d9e1e8;stroke-width:1"/>
+<text x="651.5" y="106" font-size="17" text-anchor="middle">5</text>
+<text x="651.5" y="151" font-size="20" text-anchor="middle" font-weight="bold">S5</text>
+<text x="651.5" y="191" font-size="18" text-anchor="middle">1000</text>
+<text x="651.5" y="230" font-size="18" text-anchor="middle">010</text>
+<path class="wire" d="M698 87 V735" style="stroke:#d9e1e8;stroke-width:1"/>
+<text x="744.5" y="106" font-size="17" text-anchor="middle">6</text>
+<text x="744.5" y="151" font-size="20" text-anchor="middle" font-weight="bold">S5</text>
+<text x="744.5" y="191" font-size="18" text-anchor="middle">1000</text>
+<text x="744.5" y="230" font-size="18" text-anchor="middle">010</text>
+<path class="wire" d="M791 87 V735" style="stroke:#d9e1e8;stroke-width:1"/>
+<text x="837.5" y="106" font-size="17" text-anchor="middle">7</text>
+<text x="837.5" y="151" font-size="20" text-anchor="middle" font-weight="bold">S3</text>
+<text x="837.5" y="191" font-size="18" text-anchor="middle">0111</text>
+<text x="837.5" y="230" font-size="18" text-anchor="middle">001</text>
+<path class="wire" d="M884 87 V735" style="stroke:#d9e1e8;stroke-width:1"/>
+<text x="930.5" y="106" font-size="17" text-anchor="middle">8</text>
+<text x="930.5" y="151" font-size="20" text-anchor="middle" font-weight="bold">S4</text>
+<text x="930.5" y="191" font-size="18" text-anchor="middle">0100</text>
+<text x="930.5" y="230" font-size="18" text-anchor="middle">101</text>
+<path class="wire" d="M977 87 V735" style="stroke:#d9e1e8;stroke-width:1"/>
+<text x="1023.5" y="106" font-size="17" text-anchor="middle">9</text>
+<text x="1023.5" y="151" font-size="20" text-anchor="middle" font-weight="bold">S5</text>
+<text x="1023.5" y="191" font-size="18" text-anchor="middle">1010</text>
+<text x="1023.5" y="230" font-size="18" text-anchor="middle">111</text>
+<path class="wire" d="M1070 87 V735" style="stroke:#d9e1e8;stroke-width:1"/>
+<text x="1116.5" y="106" font-size="17" text-anchor="middle">10</text>
+<text x="1116.5" y="151" font-size="20" text-anchor="middle" font-weight="bold">S6</text>
+<text x="1116.5" y="191" font-size="18" text-anchor="middle">0100</text>
+<text x="1116.5" y="230" font-size="18" text-anchor="middle">101</text>
+<path class="wire" d="M1163 87 V735" style="stroke:#d9e1e8;stroke-width:1"/>
+<text x="1209.5" y="106" font-size="17" text-anchor="middle">11</text>
+<text x="1209.5" y="151" font-size="20" text-anchor="middle" font-weight="bold">S6</text>
+<text x="1209.5" y="191" font-size="18" text-anchor="middle">0100</text>
+<text x="1209.5" y="230" font-size="18" text-anchor="middle">101</text>
+<text x="119" y="106" font-size="18" text-anchor="end">Такт</text>
+<text x="119" y="151" font-size="18" text-anchor="end">Состояние</text>
+<text x="119" y="191" font-size="18" text-anchor="end">X до ↑</text>
+<text x="119" y="230" font-size="18" text-anchor="end">F до ↑</text>
+<path class="wire" d="M140 313 H233 V313 H326 V280 H419 V313 H512 V280 H605 V313 H698 V313 H791 V280 H884 V280 H977 V313 H1070 V313 H1163 V313 H1256" style="stroke:#205e91;stroke-width:2.5"/>
+<text x="119" y="305" font-size="22" text-anchor="end">Y₁</text>
+<text x="136" y="319" font-size="12" text-anchor="end">0</text>
+<text x="136" y="283" font-size="12" text-anchor="end">1</text>
+<path class="wire" d="M140 390 H233 V390 H326 V390 H419 V357 H512 V390 H605 V357 H698 V357 H791 V390 H884 V390 H977 V357 H1070 V390 H1163 V390 H1256" style="stroke:#205e91;stroke-width:2.5"/>
+<text x="119" y="382" font-size="22" text-anchor="end">Y₂</text>
+<text x="136" y="396" font-size="12" text-anchor="end">0</text>
+<text x="136" y="360" font-size="12" text-anchor="end">1</text>
+<path class="wire" d="M140 467 H233 V467 H326 V434 H419 V467 H512 V467 H605 V434 H698 V434 H791 V467 H884 V467 H977 V434 H1070 V467 H1163 V467 H1256" style="stroke:#205e91;stroke-width:2.5"/>
+<text x="119" y="459" font-size="22" text-anchor="end">Y₃</text>
+<text x="136" y="473" font-size="12" text-anchor="end">0</text>
+<text x="136" y="437" font-size="12" text-anchor="end">1</text>
+<path class="wire" d="M140 544 H233 V544 H326 V544 H419 V511 H512 V544 H605 V544 H698 V544 H791 V511 H884 V544 H977 V544 H1070 V544 H1163 V544 H1256" style="stroke:#205e91;stroke-width:2.5"/>
+<text x="119" y="536" font-size="22" text-anchor="end">Y₄</text>
+<text x="136" y="550" font-size="12" text-anchor="end">0</text>
+<text x="136" y="514" font-size="12" text-anchor="end">1</text>
+<path class="wire" d="M140 621 H233 V621 H326 V588 H419 V621 H512 V588 H605 V588 H698 V588 H791 V621 H884 V588 H977 V588 H1070 V621 H1163 V621 H1256" style="stroke:#205e91;stroke-width:2.5"/>
+<text x="119" y="613" font-size="22" text-anchor="end">Y₅</text>
+<text x="136" y="627" font-size="12" text-anchor="end">0</text>
+<text x="136" y="591" font-size="12" text-anchor="end">1</text>
+<path class="wire" d="M140 698 H233 V698 H326 V698 H419 V698 H512 V698 H605 V698 H698 V698 H791 V698 H884 V698 H977 V698 H1070 V665 H1163 V665 H1256" style="stroke:#205e91;stroke-width:2.5"/>
+<text x="119" y="690" font-size="22" text-anchor="end">DONE</text>
+<text x="136" y="704" font-size="12" text-anchor="end">0</text>
+<text x="136" y="668" font-size="12" text-anchor="end">1</text>
+<text x="655" y="772" font-size="18" text-anchor="middle">На такте 6 повторяется S₅. На такте 7 возврат ведёт к S₃. С такта 10 автомат остаётся в S₆.</text>
+</svg>

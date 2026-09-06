@@ -1,0 +1,480 @@
+[
+  {
+    "function": "F1",
+    "on_set": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "off_set": [
+      7,
+      8,
+      9
+    ],
+    "minimum_terms": 4,
+    "minimum_literals": 8,
+    "prime_implicants": [
+      {
+        "pattern": [
+          0,
+          0,
+          null,
+          null
+        ],
+        "term": "~X1 ~X2",
+        "minterms": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "pattern": [
+          0,
+          null,
+          0,
+          null
+        ],
+        "term": "~X1 ~X3",
+        "minterms": [
+          0,
+          1,
+          4,
+          5
+        ]
+      },
+      {
+        "pattern": [
+          0,
+          null,
+          null,
+          0
+        ],
+        "term": "~X1 ~X4",
+        "minterms": [
+          0,
+          2,
+          4,
+          6
+        ]
+      },
+      {
+        "pattern": [
+          1,
+          1,
+          null,
+          null
+        ],
+        "term": "X1 X2",
+        "minterms": [
+          12,
+          13,
+          14,
+          15
+        ]
+      },
+      {
+        "pattern": [
+          1,
+          null,
+          1,
+          null
+        ],
+        "term": "X1 X3",
+        "minterms": [
+          10,
+          11,
+          14,
+          15
+        ]
+      },
+      {
+        "pattern": [
+          null,
+          0,
+          1,
+          null
+        ],
+        "term": "~X2 X3",
+        "minterms": [
+          2,
+          3,
+          10,
+          11
+        ]
+      },
+      {
+        "pattern": [
+          null,
+          1,
+          0,
+          null
+        ],
+        "term": "X2 ~X3",
+        "minterms": [
+          4,
+          5,
+          12,
+          13
+        ]
+      },
+      {
+        "pattern": [
+          null,
+          1,
+          null,
+          0
+        ],
+        "term": "X2 ~X4",
+        "minterms": [
+          4,
+          6,
+          12,
+          14
+        ]
+      },
+      {
+        "pattern": [
+          null,
+          null,
+          1,
+          0
+        ],
+        "term": "X3 ~X4",
+        "minterms": [
+          2,
+          6,
+          10,
+          14
+        ]
+      }
+    ],
+    "all_optimal_sop": [
+      "~X1 ~X2 OR ~X1 ~X4 OR X1 X3 OR X2 ~X3",
+      "~X1 ~X2 OR X1 X3 OR X2 ~X3 OR X2 ~X4",
+      "~X1 ~X2 OR X1 X3 OR X2 ~X3 OR X3 ~X4",
+      "~X1 ~X3 OR ~X1 ~X4 OR X1 X2 OR ~X2 X3",
+      "~X1 ~X3 OR X1 X2 OR ~X2 X3 OR X2 ~X4",
+      "~X1 ~X3 OR X1 X2 OR ~X2 X3 OR X3 ~X4"
+    ],
+    "selected": [
+      {
+        "pattern": [
+          0,
+          0,
+          null,
+          null
+        ],
+        "term": "~X1 ~X2",
+        "minterms": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "pattern": [
+          1,
+          null,
+          1,
+          null
+        ],
+        "term": "X1 X3",
+        "minterms": [
+          10,
+          11,
+          14,
+          15
+        ]
+      },
+      {
+        "pattern": [
+          null,
+          1,
+          0,
+          null
+        ],
+        "term": "X2 ~X3",
+        "minterms": [
+          4,
+          5,
+          12,
+          13
+        ]
+      },
+      {
+        "pattern": [
+          null,
+          1,
+          null,
+          0
+        ],
+        "term": "X2 ~X4",
+        "minterms": [
+          4,
+          6,
+          12,
+          14
+        ]
+      }
+    ]
+  },
+  {
+    "function": "F2",
+    "on_set": [
+      0,
+      1,
+      2,
+      3,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "off_set": [
+      4,
+      5,
+      6,
+      7,
+      14,
+      15
+    ],
+    "minimum_terms": 2,
+    "minimum_literals": 3,
+    "prime_implicants": [
+      {
+        "pattern": [
+          1,
+          null,
+          0,
+          null
+        ],
+        "term": "X1 ~X3",
+        "minterms": [
+          8,
+          9,
+          12,
+          13
+        ]
+      },
+      {
+        "pattern": [
+          null,
+          0,
+          null,
+          null
+        ],
+        "term": "~X2",
+        "minterms": [
+          0,
+          1,
+          2,
+          3,
+          8,
+          9,
+          10,
+          11
+        ]
+      }
+    ],
+    "all_optimal_sop": [
+      "X1 ~X3 OR ~X2"
+    ],
+    "selected": [
+      {
+        "pattern": [
+          null,
+          0,
+          null,
+          null
+        ],
+        "term": "~X2",
+        "minterms": [
+          0,
+          1,
+          2,
+          3,
+          8,
+          9,
+          10,
+          11
+        ]
+      },
+      {
+        "pattern": [
+          1,
+          null,
+          0,
+          null
+        ],
+        "term": "X1 ~X3",
+        "minterms": [
+          8,
+          9,
+          12,
+          13
+        ]
+      }
+    ]
+  },
+  {
+    "function": "F3",
+    "on_set": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "off_set": [
+      8,
+      9
+    ],
+    "minimum_terms": 3,
+    "minimum_literals": 3,
+    "prime_implicants": [
+      {
+        "pattern": [
+          0,
+          null,
+          null,
+          null
+        ],
+        "term": "~X1",
+        "minterms": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      {
+        "pattern": [
+          null,
+          1,
+          null,
+          null
+        ],
+        "term": "X2",
+        "minterms": [
+          4,
+          5,
+          6,
+          7,
+          12,
+          13,
+          14,
+          15
+        ]
+      },
+      {
+        "pattern": [
+          null,
+          null,
+          1,
+          null
+        ],
+        "term": "X3",
+        "minterms": [
+          2,
+          3,
+          6,
+          7,
+          10,
+          11,
+          14,
+          15
+        ]
+      }
+    ],
+    "all_optimal_sop": [
+      "~X1 OR X2 OR X3"
+    ],
+    "selected": [
+      {
+        "pattern": [
+          0,
+          null,
+          null,
+          null
+        ],
+        "term": "~X1",
+        "minterms": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      {
+        "pattern": [
+          null,
+          1,
+          null,
+          null
+        ],
+        "term": "X2",
+        "minterms": [
+          4,
+          5,
+          6,
+          7,
+          12,
+          13,
+          14,
+          15
+        ]
+      },
+      {
+        "pattern": [
+          null,
+          null,
+          1,
+          null
+        ],
+        "term": "X3",
+        "minterms": [
+          2,
+          3,
+          6,
+          7,
+          10,
+          11,
+          14,
+          15
+        ]
+      }
+    ]
+  }
+]

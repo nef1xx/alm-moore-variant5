@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1450" height="465" viewBox="0 0 1450 465">
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#17212b"/></marker></defs>
+<rect width="1450" height="465" fill="white"/>
+<style>text{font-family:Arial,sans-serif;fill:#17212b} .wire{fill:none;stroke:#17212b;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}</style>
+<text x="725.0" y="34" font-size="24" text-anchor="middle" font-weight="bold">Формирование выходов Y₁…Y₅ и DONE</text>
+<text x="725" y="70" font-size="17" text-anchor="middle">Именованные цепи: одинаковые подписи означают электрическое соединение, в том числе между листами.</text>
+<rect x="155" y="128" width="78" height="81" rx="0" fill="white" stroke="#17212b" stroke-width="2"/>
+<text x="194" y="175.5" font-size="23" text-anchor="middle">≥1</text>
+<path class="wire" d="M123 148.25 H155" style="stroke:#17212b;stroke-width:2"/>
+<text x="116" y="153.25" font-size="16" text-anchor="end">z1</text>
+<path class="wire" d="M123 168.5 H155" style="stroke:#17212b;stroke-width:2"/>
+<text x="116" y="173.5" font-size="16" text-anchor="end">z3</text>
+<path class="wire" d="M123 188.75 H155" style="stroke:#17212b;stroke-width:2"/>
+<text x="116" y="193.75" font-size="16" text-anchor="end">z4</text>
+<path class="wire" d="M233 168.5 H281" style="stroke:#17212b;stroke-width:2"/>
+<text x="290" y="173.5" font-size="17" text-anchor="start">Y1</text>
+<text x="194" y="120" font-size="15" text-anchor="middle" style="fill:#52616f">Y1</text>
+<rect x="630" y="128" width="78" height="58" rx="0" fill="white" stroke="#17212b" stroke-width="2"/>
+<text x="669" y="164.0" font-size="23" text-anchor="middle">≥1</text>
+<path class="wire" d="M598 147.33333333333334 H630" style="stroke:#17212b;stroke-width:2"/>
+<text x="591" y="152.33333333333334" font-size="16" text-anchor="end">z2</text>
+<path class="wire" d="M598 166.66666666666666 H630" style="stroke:#17212b;stroke-width:2"/>
+<text x="591" y="171.66666666666666" font-size="16" text-anchor="end">z5</text>
+<path class="wire" d="M708 157.0 H756" style="stroke:#17212b;stroke-width:2"/>
+<text x="765" y="162.0" font-size="17" text-anchor="start">Y2</text>
+<text x="669" y="120" font-size="15" text-anchor="middle" style="fill:#52616f">Y2</text>
+<rect x="1105" y="128" width="78" height="58" rx="0" fill="white" stroke="#17212b" stroke-width="2"/>
+<text x="1144" y="164.0" font-size="23" text-anchor="middle">≥1</text>
+<path class="wire" d="M1073 147.33333333333334 H1105" style="stroke:#17212b;stroke-width:2"/>
+<text x="1066" y="152.33333333333334" font-size="16" text-anchor="end">z1</text>
+<path class="wire" d="M1073 166.66666666666666 H1105" style="stroke:#17212b;stroke-width:2"/>
+<text x="1066" y="171.66666666666666" font-size="16" text-anchor="end">z5</text>
+<path class="wire" d="M1183 157.0 H1231" style="stroke:#17212b;stroke-width:2"/>
+<text x="1240" y="162.0" font-size="17" text-anchor="start">Y3</text>
+<text x="1144" y="120" font-size="15" text-anchor="middle" style="fill:#52616f">Y3</text>
+<rect x="155" y="283" width="78" height="58" rx="0" fill="white" stroke="#17212b" stroke-width="2"/>
+<text x="194" y="319.0" font-size="23" text-anchor="middle">≥1</text>
+<path class="wire" d="M123 302.3333333333333 H155" style="stroke:#17212b;stroke-width:2"/>
+<text x="116" y="307.3333333333333" font-size="16" text-anchor="end">z2</text>
+<path class="wire" d="M123 321.6666666666667 H155" style="stroke:#17212b;stroke-width:2"/>
+<text x="116" y="326.6666666666667" font-size="16" text-anchor="end">z3</text>
+<path class="wire" d="M233 312.0 H281" style="stroke:#17212b;stroke-width:2"/>
+<text x="290" y="317.0" font-size="17" text-anchor="start">Y4</text>
+<text x="194" y="275" font-size="15" text-anchor="middle" style="fill:#52616f">Y4</text>
+<rect x="630" y="283" width="78" height="81" rx="0" fill="white" stroke="#17212b" stroke-width="2"/>
+<text x="669" y="330.5" font-size="23" text-anchor="middle">≥1</text>
+<path class="wire" d="M598 303.25 H630" style="stroke:#17212b;stroke-width:2"/>
+<text x="591" y="308.25" font-size="16" text-anchor="end">z1</text>
+<path class="wire" d="M598 323.5 H630" style="stroke:#17212b;stroke-width:2"/>
+<text x="591" y="328.5" font-size="16" text-anchor="end">z4</text>
+<path class="wire" d="M598 343.75 H630" style="stroke:#17212b;stroke-width:2"/>
+<text x="591" y="348.75" font-size="16" text-anchor="end">z5</text>
+<path class="wire" d="M708 323.5 H756" style="stroke:#17212b;stroke-width:2"/>
+<text x="765" y="328.5" font-size="17" text-anchor="start">Y5</text>
+<text x="669" y="275" font-size="15" text-anchor="middle" style="fill:#52616f">Y5</text>
+<rect x="1105" y="283" width="78" height="54" rx="0" fill="white" stroke="#17212b" stroke-width="2"/>
+<text x="1144" y="317.0" font-size="23" text-anchor="middle">1</text>
+<path class="wire" d="M1073 310.0 H1105" style="stroke:#17212b;stroke-width:2"/>
+<text x="1066" y="315.0" font-size="16" text-anchor="end">z6</text>
+<path class="wire" d="M1183 310.0 H1231" style="stroke:#17212b;stroke-width:2"/>
+<text x="1240" y="315.0" font-size="17" text-anchor="start">DONE</text>
+<text x="1144" y="275" font-size="15" text-anchor="middle" style="fill:#52616f">DONE</text>
+<text x="725" y="447" font-size="17" text-anchor="middle">&amp; — И; ≥1 — ИЛИ; кружок на выходе — НЕ; 1 без кружка — повторитель.</text>
+</svg>

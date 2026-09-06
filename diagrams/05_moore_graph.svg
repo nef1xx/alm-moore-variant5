@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1380" height="1080" viewBox="0 0 1380 1080">
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#17212b"/></marker></defs>
+<rect width="1380" height="1080" fill="white"/>
+<style>text{font-family:Arial,sans-serif;fill:#17212b} .wire{fill:none;stroke:#17212b;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}</style>
+<text x="690.0" y="34" font-size="24" text-anchor="middle" font-weight="bold">Граф Мура — основной вариант с завершением</text>
+<path class="wire" d="M92 109 C20 20 250 10 185 104" style="stroke:#17212b;stroke-width:2" marker-end="url(#arrow)"/>
+<rect x="111.2" y="51" width="37.599999999999994" height="29" rx="0" fill="white" stroke="none" stroke-width="2"/>
+<text x="130" y="70" font-size="20" text-anchor="middle">F₂</text>
+<path class="wire" d="M210 160 H380" style="stroke:#17212b;stroke-width:2" marker-end="url(#arrow)"/>
+<rect x="270.3" y="124" width="49.4" height="29" rx="0" fill="white" stroke="none" stroke-width="2"/>
+<text x="295" y="143" font-size="20" text-anchor="middle">¬F₂</text>
+<path class="wire" d="M520 160 H720" style="stroke:#17212b;stroke-width:2" marker-end="url(#arrow)"/>
+<rect x="606.0" y="124" width="28" height="29" rx="0" fill="white" stroke="none" stroke-width="2"/>
+<text x="620" y="143" font-size="20" text-anchor="middle">1</text>
+<path class="wire" d="M843 207 L1078 383" style="stroke:#17212b;stroke-width:2" marker-end="url(#arrow)"/>
+<rect x="954.3" y="256" width="49.4" height="29" rx="0" fill="white" stroke="none" stroke-width="2"/>
+<text x="979" y="275" font-size="20" text-anchor="middle">¬F₂</text>
+<path class="wire" d="M790 230 V650" style="stroke:#17212b;stroke-width:2" marker-end="url(#arrow)"/>
+<rect x="823.1" y="428" width="143.79999999999998" height="29" rx="0" fill="white" stroke="none" stroke-width="2"/>
+<text x="895" y="447" font-size="20" text-anchor="middle">F₂(F₃ ∨ F₁)</text>
+<path class="wire" d="M744 214 C680 310 450 270 450 650" style="stroke:#17212b;stroke-width:2" marker-end="url(#arrow)"/>
+<rect x="509.8" y="299" width="108.39999999999999" height="29" rx="0" fill="white" stroke="none" stroke-width="2"/>
+<text x="564" y="318" font-size="20" text-anchor="middle">F₂¬F₃¬F₁</text>
+<path class="wire" d="M1077 476 L842 672" style="stroke:#17212b;stroke-width:2" marker-end="url(#arrow)"/>
+<rect x="975.0" y="542" width="28" height="29" rx="0" fill="white" stroke="none" stroke-width="2"/>
+<text x="989" y="561" font-size="20" text-anchor="middle">1</text>
+<path class="wire" d="M720 720 H520" style="stroke:#17212b;stroke-width:2" marker-end="url(#arrow)"/>
+<rect x="606.0" y="731" width="28" height="29" rx="0" fill="white" stroke="none" stroke-width="2"/>
+<text x="620" y="750" font-size="20" text-anchor="middle">1</text>
+<path class="wire" d="M514 750 C690 1000 1335 1070 1180 480" style="stroke:#17212b;stroke-width:2" marker-end="url(#arrow)"/>
+<rect x="967.6" y="947" width="84.8" height="29" rx="0" fill="white" stroke="none" stroke-width="2"/>
+<text x="1010" y="966" font-size="20" text-anchor="middle">¬F₁¬F₂</text>
+<path class="wire" d="M509 683 C570 556 688 565 745 665" style="stroke:#17212b;stroke-width:2" marker-end="url(#arrow)"/>
+<rect x="588.7" y="551" width="96.6" height="29" rx="0" fill="white" stroke="none" stroke-width="2"/>
+<text x="637" y="570" font-size="20" text-anchor="middle">¬F₁F₂F₃</text>
+<path class="wire" d="M425 786 C353 929 594 929 485 781" style="stroke:#17212b;stroke-width:2" marker-end="url(#arrow)"/>
+<rect x="408.8" y="924" width="108.39999999999999" height="29" rx="0" fill="white" stroke="none" stroke-width="2"/>
+<text x="463" y="943" font-size="20" text-anchor="middle">¬F₁F₂¬F₃</text>
+<path class="wire" d="M380 720 H210" style="stroke:#17212b;stroke-width:2" marker-end="url(#arrow)"/>
+<rect x="276.2" y="683" width="37.599999999999994" height="29" rx="0" fill="white" stroke="none" stroke-width="2"/>
+<text x="295" y="702" font-size="20" text-anchor="middle">F₁</text>
+<path class="wire" d="M92 771 C5 892 274 892 186 773" style="stroke:#17212b;stroke-width:2" marker-end="url(#arrow)"/>
+<rect x="126.0" y="867" width="28" height="29" rx="0" fill="white" stroke="none" stroke-width="2"/>
+<text x="140" y="886" font-size="20" text-anchor="middle">1</text>
+<circle cx="140" cy="160" r="70" fill="#f8fbff" stroke="#17212b" stroke-width="2"/>
+<text x="140" y="136" font-size="25" text-anchor="middle" font-weight="bold">S₀</text>
+<text x="140" y="162" font-size="16" text-anchor="middle" style="fill:#52616f">000</text>
+<text x="140" y="191" font-size="19" text-anchor="middle">—</text>
+<circle cx="450" cy="160" r="70" fill="white" stroke="#17212b" stroke-width="2"/>
+<text x="450" y="136" font-size="25" text-anchor="middle" font-weight="bold">S₁</text>
+<text x="450" y="162" font-size="16" text-anchor="middle" style="fill:#52616f">001</text>
+<text x="450" y="191" font-size="19" text-anchor="middle">Y₁,Y₃,Y₅</text>
+<circle cx="790" cy="160" r="70" fill="white" stroke="#17212b" stroke-width="2"/>
+<text x="790" y="136" font-size="25" text-anchor="middle" font-weight="bold">S₂</text>
+<text x="790" y="162" font-size="16" text-anchor="middle" style="fill:#52616f">010</text>
+<text x="790" y="191" font-size="19" text-anchor="middle">Y₂,Y₄</text>
+<circle cx="1130" cy="430" r="70" fill="white" stroke="#17212b" stroke-width="2"/>
+<text x="1130" y="406" font-size="25" text-anchor="middle" font-weight="bold">S₃</text>
+<text x="1130" y="432" font-size="16" text-anchor="middle" style="fill:#52616f">011</text>
+<text x="1130" y="461" font-size="19" text-anchor="middle">Y₁,Y₄</text>
+<circle cx="790" cy="720" r="70" fill="white" stroke="#17212b" stroke-width="2"/>
+<text x="790" y="696" font-size="25" text-anchor="middle" font-weight="bold">S₄</text>
+<text x="790" y="722" font-size="16" text-anchor="middle" style="fill:#52616f">100</text>
+<text x="790" y="751" font-size="19" text-anchor="middle">Y₁,Y₅</text>
+<circle cx="450" cy="720" r="70" fill="white" stroke="#17212b" stroke-width="2"/>
+<text x="450" y="696" font-size="25" text-anchor="middle" font-weight="bold">S₅</text>
+<text x="450" y="722" font-size="16" text-anchor="middle" style="fill:#52616f">101</text>
+<text x="450" y="751" font-size="19" text-anchor="middle">Y₂,Y₃,Y₅</text>
+<circle cx="140" cy="720" r="70" fill="#f8fbff" stroke="#17212b" stroke-width="2"/>
+<circle cx="140" cy="720" r="63" fill="white" stroke="#52616f" stroke-width="1"/>
+<text x="140" y="696" font-size="25" text-anchor="middle" font-weight="bold">S₆</text>
+<text x="140" y="722" font-size="16" text-anchor="middle" style="fill:#52616f">110</text>
+<text x="140" y="751" font-size="19" text-anchor="middle">—</text>
+<path class="wire" d="M140 315 V232" style="stroke:#17212b;stroke-width:2" marker-end="url(#arrow)"/>
+<text x="170" y="313" font-size="17" text-anchor="start">Начало / RESET</text>
+<text x="690" y="1022" font-size="18" text-anchor="middle">Дуги показаны при RESET = 0. RESET = 1 на фронте CLK переводит любое состояние в S₀.</text>
+<text x="690" y="1050" font-size="18" text-anchor="middle">Внутри вершины: состояние, код q₂q₁q₀, активные выходы. Остальные Y равны 0.</text>
+</svg>

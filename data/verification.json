@@ -1,0 +1,45 @@
+{
+  "status": "PASS",
+  "input_rows": 16,
+  "lsa_next_event_cases": 88,
+  "formal_state_input_cases": 64,
+  "formal_state_input_reset_cases": 128,
+  "integrated_state_x_cases": 128,
+  "reachable_F": [
+    [
+      0,
+      0,
+      1
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      1,
+      0,
+      1
+    ],
+    [
+      1,
+      1,
+      1
+    ]
+  ],
+  "minimum_sop_costs": [
+    [
+      4,
+      8
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      3,
+      3
+    ]
+  ],
+  "note": "Детерминированные проверки этого файла; дополнительные 10 000 тактов проверяет unittest."
+}

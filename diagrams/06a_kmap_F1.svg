@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="680" viewBox="0 0 1120 680">
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#17212b"/></marker></defs>
+<rect width="1120" height="680" fill="white"/>
+<style>text{font-family:Arial,sans-serif;fill:#17212b} .wire{fill:none;stroke:#17212b;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}</style>
+<text x="560.0" y="34" font-size="24" text-anchor="middle" font-weight="bold">Минимизация F1 — карта Карно</text>
+<text x="340" y="92" font-size="22" text-anchor="middle">X₃X₄ →</text>
+<text x="65" y="326" font-size="22" text-anchor="middle">X₁X₂</text>
+<text x="205.0" y="125" font-size="22" text-anchor="middle">00</text>
+<text x="130" y="198.0" font-size="22" text-anchor="middle">00</text>
+<text x="295.0" y="125" font-size="22" text-anchor="middle">01</text>
+<text x="130" y="288.0" font-size="22" text-anchor="middle">01</text>
+<text x="385.0" y="125" font-size="22" text-anchor="middle">11</text>
+<text x="130" y="378.0" font-size="22" text-anchor="middle">11</text>
+<text x="475.0" y="125" font-size="22" text-anchor="middle">10</text>
+<text x="130" y="468.0" font-size="22" text-anchor="middle">10</text>
+<rect x="160" y="145" width="90" height="90" rx="0" fill="#f2f6fa" stroke="#b2bec9" stroke-width="1"/>
+<text x="205.0" y="200.0" font-size="28" text-anchor="middle">1</text>
+<rect x="250" y="145" width="90" height="90" rx="0" fill="#f2f6fa" stroke="#b2bec9" stroke-width="1"/>
+<text x="295.0" y="200.0" font-size="28" text-anchor="middle">1</text>
+<rect x="340" y="145" width="90" height="90" rx="0" fill="#f2f6fa" stroke="#b2bec9" stroke-width="1"/>
+<text x="385.0" y="200.0" font-size="28" text-anchor="middle">1</text>
+<rect x="430" y="145" width="90" height="90" rx="0" fill="#f2f6fa" stroke="#b2bec9" stroke-width="1"/>
+<text x="475.0" y="200.0" font-size="28" text-anchor="middle">1</text>
+<rect x="160" y="235" width="90" height="90" rx="0" fill="#f2f6fa" stroke="#b2bec9" stroke-width="1"/>
+<text x="205.0" y="290.0" font-size="28" text-anchor="middle">1</text>
+<rect x="250" y="235" width="90" height="90" rx="0" fill="#f2f6fa" stroke="#b2bec9" stroke-width="1"/>
+<text x="295.0" y="290.0" font-size="28" text-anchor="middle">1</text>
+<rect x="340" y="235" width="90" height="90" rx="0" fill="white" stroke="#b2bec9" stroke-width="1"/>
+<text x="385.0" y="290.0" font-size="28" text-anchor="middle">0</text>
+<rect x="430" y="235" width="90" height="90" rx="0" fill="#f2f6fa" stroke="#b2bec9" stroke-width="1"/>
+<text x="475.0" y="290.0" font-size="28" text-anchor="middle">1</text>
+<rect x="160" y="325" width="90" height="90" rx="0" fill="#f2f6fa" stroke="#b2bec9" stroke-width="1"/>
+<text x="205.0" y="380.0" font-size="28" text-anchor="middle">1</text>
+<rect x="250" y="325" width="90" height="90" rx="0" fill="#f2f6fa" stroke="#b2bec9" stroke-width="1"/>
+<text x="295.0" y="380.0" font-size="28" text-anchor="middle">1</text>
+<rect x="340" y="325" width="90" height="90" rx="0" fill="#f2f6fa" stroke="#b2bec9" stroke-width="1"/>
+<text x="385.0" y="380.0" font-size="28" text-anchor="middle">1</text>
+<rect x="430" y="325" width="90" height="90" rx="0" fill="#f2f6fa" stroke="#b2bec9" stroke-width="1"/>
+<text x="475.0" y="380.0" font-size="28" text-anchor="middle">1</text>
+<rect x="160" y="415" width="90" height="90" rx="0" fill="white" stroke="#b2bec9" stroke-width="1"/>
+<text x="205.0" y="470.0" font-size="28" text-anchor="middle">0</text>
+<rect x="250" y="415" width="90" height="90" rx="0" fill="white" stroke="#b2bec9" stroke-width="1"/>
+<text x="295.0" y="470.0" font-size="28" text-anchor="middle">0</text>
+<rect x="340" y="415" width="90" height="90" rx="0" fill="#f2f6fa" stroke="#b2bec9" stroke-width="1"/>
+<text x="385.0" y="470.0" font-size="28" text-anchor="middle">1</text>
+<rect x="430" y="415" width="90" height="90" rx="0" fill="#f2f6fa" stroke="#b2bec9" stroke-width="1"/>
+<text x="475.0" y="470.0" font-size="28" text-anchor="middle">1</text>
+<rect x="165" y="150" width="350" height="80" rx="12" fill="none" stroke="#b73437" stroke-width="3"/>
+<rect x="610" y="156" width="27" height="27" rx="0" fill="none" stroke="#b73437" stroke-width="3"/>
+<text x="654" y="178" font-size="23" text-anchor="start">G1: ¬X₁ ¬X₂</text>
+<text x="654" y="205" font-size="17" text-anchor="start" style="fill:#52616f">Клеток: 4; литералов: 2</text>
+<rect x="349" y="334" width="162" height="162" rx="12" fill="none" stroke="#2468b0" stroke-width="3"/>
+<rect x="610" y="234" width="27" height="27" rx="0" fill="none" stroke="#2468b0" stroke-width="3"/>
+<text x="654" y="256" font-size="23" text-anchor="start">G2: X₁ X₃</text>
+<text x="654" y="283" font-size="17" text-anchor="start" style="fill:#52616f">Клеток: 4; литералов: 2</text>
+<rect x="173" y="248" width="154" height="154" rx="12" fill="none" stroke="#16816b" stroke-width="3"/>
+<rect x="610" y="312" width="27" height="27" rx="0" fill="none" stroke="#16816b" stroke-width="3"/>
+<text x="654" y="334" font-size="23" text-anchor="start">G3: X₂ ¬X₃</text>
+<text x="654" y="361" font-size="17" text-anchor="start" style="fill:#52616f">Клеток: 4; литералов: 2</text>
+<rect x="177" y="252" width="56" height="146" rx="12" fill="none" stroke="#8c4faa" stroke-width="3"/>
+<rect x="447" y="252" width="56" height="146" rx="12" fill="none" stroke="#8c4faa" stroke-width="3"/>
+<rect x="610" y="390" width="27" height="27" rx="0" fill="none" stroke="#8c4faa" stroke-width="3"/>
+<text x="654" y="412" font-size="23" text-anchor="start">G4: X₂ ¬X₄</text>
+<text x="654" y="439" font-size="17" text-anchor="start" style="fill:#52616f">Клеток: 4; литералов: 2</text>
+<text x="560" y="559" font-size="22" text-anchor="middle">F1 = ¬X₁ ¬X₂ ∨ X₁ X₃ ∨ X₂ ¬X₃ ∨ X₂ ¬X₄</text>
+<text x="560" y="603" font-size="18" text-anchor="middle">Порядок Грея: 00, 01, 11, 10. Противоположные края карты соседствуют.</text>
+<text x="560" y="639" font-size="17" text-anchor="middle">Группы с переходом через край: G4. Части одного цвета образуют одну группу.</text>
+</svg>

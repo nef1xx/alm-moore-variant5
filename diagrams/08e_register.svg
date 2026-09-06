@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1330" height="1120" viewBox="0 0 1330 1120">
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#17212b"/></marker></defs>
+<rect width="1330" height="1120" fill="white"/>
+<style>text{font-family:Arial,sans-serif;fill:#17212b} .wire{fill:none;stroke:#17212b;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}</style>
+<text x="665.0" y="34" font-size="24" text-anchor="middle" font-weight="bold">Регистр состояния — три синхронных RS-триггера</text>
+<text x="665" y="73" font-size="19" text-anchor="middle">Все три триггера переключаются одновременно по положительному фронту CLK.</text>
+<rect x="495" y="150" width="290" height="215" rx="0" fill="white" stroke="#17212b" stroke-width="2"/>
+<text x="640" y="188" font-size="26" text-anchor="middle" font-weight="bold">RS2</text>
+<path class="wire" d="M320 232 H495" style="stroke:#17212b;stroke-width:2" marker-end="url(#arrow)"/>
+<text x="308" y="239" font-size="23" text-anchor="end">S2</text>
+<text x="511" y="239" font-size="22" text-anchor="start">S</text>
+<path class="wire" d="M320 283 H495" style="stroke:#17212b;stroke-width:2" marker-end="url(#arrow)"/>
+<text x="308" y="290" font-size="23" text-anchor="end">R2</text>
+<text x="511" y="290" font-size="22" text-anchor="start">R</text>
+<path class="wire" d="M320 333 H495" style="stroke:#17212b;stroke-width:2"/>
+<path class="wire" d="M495 323 L510 333 L495 343" style="stroke:#17212b;stroke-width:2"/>
+<text x="308" y="340" font-size="22" text-anchor="end">CLK</text>
+<path class="wire" d="M785 242 H958" style="stroke:#17212b;stroke-width:2" marker-end="url(#arrow)"/>
+<text x="978" y="250" font-size="25" text-anchor="start">q2</text>
+<path class="wire" d="M785 303 H958" style="stroke:#17212b;stroke-width:2" marker-end="url(#arrow)"/>
+<text x="978" y="311" font-size="25" text-anchor="start">¬q2</text>
+<text x="60" y="210" font-size="22" text-anchor="start">Разряд 2</text>
+<text x="60" y="249" font-size="18" text-anchor="start">S2=¬RESET · ¬q2 · N2</text>
+<text x="60" y="284" font-size="18" text-anchor="start">R2=q2 · (RESET ∨ ¬N2)</text>
+<rect x="495" y="440" width="290" height="215" rx="0" fill="white" stroke="#17212b" stroke-width="2"/>
+<text x="640" y="478" font-size="26" text-anchor="middle" font-weight="bold">RS1</text>
+<path class="wire" d="M320 522 H495" style="stroke:#17212b;stroke-width:2" marker-end="url(#arrow)"/>
+<text x="308" y="529" font-size="23" text-anchor="end">S1</text>
+<text x="511" y="529" font-size="22" text-anchor="start">S</text>
+<path class="wire" d="M320 573 H495" style="stroke:#17212b;stroke-width:2" marker-end="url(#arrow)"/>
+<text x="308" y="580" font-size="23" text-anchor="end">R1</text>
+<text x="511" y="580" font-size="22" text-anchor="start">R</text>
+<path class="wire" d="M320 623 H495" style="stroke:#17212b;stroke-width:2"/>
+<path class="wire" d="M495 613 L510 623 L495 633" style="stroke:#17212b;stroke-width:2"/>
+<text x="308" y="630" font-size="22" text-anchor="end">CLK</text>
+<path class="wire" d="M785 532 H958" style="stroke:#17212b;stroke-width:2" marker-end="url(#arrow)"/>
+<text x="978" y="540" font-size="25" text-anchor="start">q1</text>
+<path class="wire" d="M785 593 H958" style="stroke:#17212b;stroke-width:2" marker-end="url(#arrow)"/>
+<text x="978" y="601" font-size="25" text-anchor="start">¬q1</text>
+<text x="60" y="500" font-size="22" text-anchor="start">Разряд 1</text>
+<text x="60" y="539" font-size="18" text-anchor="start">S1=¬RESET · ¬q1 · N1</text>
+<text x="60" y="574" font-size="18" text-anchor="start">R1=q1 · (RESET ∨ ¬N1)</text>
+<rect x="495" y="730" width="290" height="215" rx="0" fill="white" stroke="#17212b" stroke-width="2"/>
+<text x="640" y="768" font-size="26" text-anchor="middle" font-weight="bold">RS0</text>
+<path class="wire" d="M320 812 H495" style="stroke:#17212b;stroke-width:2" marker-end="url(#arrow)"/>
+<text x="308" y="819" font-size="23" text-anchor="end">S0</text>
+<text x="511" y="819" font-size="22" text-anchor="start">S</text>
+<path class="wire" d="M320 863 H495" style="stroke:#17212b;stroke-width:2" marker-end="url(#arrow)"/>
+<text x="308" y="870" font-size="23" text-anchor="end">R0</text>
+<text x="511" y="870" font-size="22" text-anchor="start">R</text>
+<path class="wire" d="M320 913 H495" style="stroke:#17212b;stroke-width:2"/>
+<path class="wire" d="M495 903 L510 913 L495 923" style="stroke:#17212b;stroke-width:2"/>
+<text x="308" y="920" font-size="22" text-anchor="end">CLK</text>
+<path class="wire" d="M785 822 H958" style="stroke:#17212b;stroke-width:2" marker-end="url(#arrow)"/>
+<text x="978" y="830" font-size="25" text-anchor="start">q0</text>
+<path class="wire" d="M785 883 H958" style="stroke:#17212b;stroke-width:2" marker-end="url(#arrow)"/>
+<text x="978" y="891" font-size="25" text-anchor="start">¬q0</text>
+<text x="60" y="790" font-size="22" text-anchor="start">Разряд 0</text>
+<text x="60" y="829" font-size="18" text-anchor="start">S0=¬RESET · ¬q0 · N0</text>
+<text x="60" y="864" font-size="18" text-anchor="start">R0=q0 · (RESET ∨ ¬N0)</text>
+<text x="665" y="1051" font-size="18" text-anchor="middle">RESET — синхронный, активный 1; он учтён в логике S и R на соседнем листе.</text>
+<text x="665" y="1086" font-size="18" text-anchor="middle">При RESET = 1: S = 0, R = q. На ближайшем фронте все q становятся 0.</text>
+</svg>

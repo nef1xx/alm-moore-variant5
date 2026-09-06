@@ -1,0 +1,8 @@
+{
+  "name": "alm-moore-variant5",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Optional SVG to PNG renderer for the ALM coursework",
+  "scripts": {"render": "node scripts/render_assets.cjs"},
+  "devDependencies": {"sharp": "0.35.4"}
+}

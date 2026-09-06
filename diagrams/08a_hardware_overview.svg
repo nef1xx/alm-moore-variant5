@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1530" height="850" viewBox="0 0 1530 850">
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#17212b"/></marker></defs>
+<rect width="1530" height="850" fill="white"/>
+<style>text{font-family:Arial,sans-serif;fill:#17212b} .wire{fill:none;stroke:#17212b;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}</style>
+<text x="765.0" y="34" font-size="24" text-anchor="middle" font-weight="bold">Аппаратная реализация УЛУ — структура и соединения</text>
+<rect x="170" y="180" width="200" height="180" rx="0" fill="#f8fbff" stroke="#17212b" stroke-width="2"/>
+<text x="270.0" y="232" font-size="21" text-anchor="middle">Формирование F</text>
+<text x="270.0" y="271" font-size="21" text-anchor="middle">И, ИЛИ, НЕ</text>
+<text x="270.0" y="310" font-size="18" text-anchor="middle">лист 07</text>
+<rect x="480" y="180" width="240" height="180" rx="0" fill="#f8fbff" stroke="#17212b" stroke-width="2"/>
+<text x="600.0" y="232" font-size="21" text-anchor="middle">Дешифратор q</text>
+<text x="600.0" y="271" font-size="21" text-anchor="middle">и логика N</text>
+<text x="600.0" y="310" font-size="18" text-anchor="middle">листы 08b, 08c</text>
+<rect x="830" y="180" width="230" height="180" rx="0" fill="#f8fbff" stroke="#17212b" stroke-width="2"/>
+<text x="945.0" y="232" font-size="21" text-anchor="middle">Возбуждение S,R</text>
+<text x="945.0" y="271" font-size="21" text-anchor="middle">с учётом RESET</text>
+<text x="945.0" y="310" font-size="18" text-anchor="middle">лист 08d</text>
+<rect x="1180" y="180" width="220" height="180" rx="0" fill="#f8fbff" stroke="#17212b" stroke-width="2"/>
+<text x="1290.0" y="232" font-size="21" text-anchor="middle">Регистр q₂q₁q₀</text>
+<text x="1290.0" y="271" font-size="21" text-anchor="middle">3 RS-триггера</text>
+<text x="1290.0" y="310" font-size="18" text-anchor="middle">лист 08e</text>
+<rect x="900" y="600" width="340" height="150" rx="0" fill="#f8fbff" stroke="#17212b" stroke-width="2"/>
+<text x="1070.0" y="652" font-size="21" text-anchor="middle">Формирование Y и DONE</text>
+<text x="1070.0" y="691" font-size="21" text-anchor="middle">только по состоянию q</text>
+<text x="1070.0" y="730" font-size="18" text-anchor="middle">лист 08f</text>
+<path class="wire" d="M45 265 H170" style="stroke:#17212b;stroke-width:2" marker-end="url(#arrow)"/>
+<text x="87" y="242" font-size="20" text-anchor="middle">X₁…X₄</text>
+<path class="wire" d="M370 235 H480" style="stroke:#17212b;stroke-width:2" marker-end="url(#arrow)"/>
+<text x="425" y="215" font-size="18" text-anchor="middle">F₁,F₂,F₃</text>
+<path class="wire" d="M720 265 H830" style="stroke:#17212b;stroke-width:2" marker-end="url(#arrow)"/>
+<text x="775" y="243" font-size="18" text-anchor="middle">N₂,N₁,N₀</text>
+<path class="wire" d="M1060 240 H1180" style="stroke:#17212b;stroke-width:2" marker-end="url(#arrow)"/>
+<text x="1120" y="219" font-size="18" text-anchor="middle">S₂,S₁,S₀</text>
+<path class="wire" d="M1060 310 H1180" style="stroke:#17212b;stroke-width:2" marker-end="url(#arrow)"/>
+<text x="1120" y="292" font-size="18" text-anchor="middle">R₂,R₁,R₀</text>
+<path class="wire" d="M1400 270 H1450 V480 H450 V315 H480" style="stroke:#17212b;stroke-width:2" marker-end="url(#arrow)"/>
+<text x="1230" y="468" font-size="20" text-anchor="middle">Обратная связь q₂,q₁,q₀</text>
+<path class="wire" d="M945 480 V360" style="stroke:#17212b;stroke-width:2" marker-end="url(#arrow)"/>
+<circle cx="945" cy="480" r="4" fill="#17212b" stroke="#17212b" stroke-width="2"/>
+<text x="898" y="420" font-size="18" text-anchor="middle">q₂,q₁,q₀</text>
+<path class="wire" d="M1070 480 V600" style="stroke:#17212b;stroke-width:2" marker-end="url(#arrow)"/>
+<circle cx="1070" cy="480" r="4" fill="#17212b" stroke="#17212b" stroke-width="2"/>
+<path class="wire" d="M1240 675 H1440" style="stroke:#17212b;stroke-width:2" marker-end="url(#arrow)"/>
+<text x="1340" y="652" font-size="20" text-anchor="middle">Y₁…Y₅, DONE</text>
+<path class="wire" d="M800 108 H945 V180" style="stroke:#17212b;stroke-width:2" marker-end="url(#arrow)"/>
+<text x="800" y="94" font-size="20" text-anchor="middle">RESET</text>
+<path class="wire" d="M1140 108 H1290 V180" style="stroke:#17212b;stroke-width:2" marker-end="url(#arrow)"/>
+<text x="1140" y="94" font-size="20" text-anchor="middle">CLK ↑</text>
+<text x="490" y="650" font-size="26" text-anchor="middle">q⁺ = S ∨ (q ∧ ¬R)</text>
+<text x="490" y="698" font-size="21" text-anchor="middle">S ∧ R = 0 для каждого разряда</text>
+<text x="765" y="804" font-size="18" text-anchor="middle">Каждая линия с перечнем сигналов обозначает группу отдельных проводов. RESET действует на фронте CLK.</text>
+</svg>

@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1540" height="205" viewBox="0 0 1540 205">
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#17212b"/></marker></defs>
+<rect width="1540" height="205" fill="white"/>
+<style>text{font-family:Arial,sans-serif;fill:#17212b} .wire{fill:none;stroke:#17212b;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}</style>
+<text x="770.0" y="34" font-size="24" text-anchor="middle" font-weight="bold">ЛСА варианта 5 — переход по ↑ при A = 1</text>
+<path class="wire" d="M48 70 V144 M33 128 L48 144 L63 128" style="stroke:#17212b;stroke-width:4"/>
+<text x="65" y="77" font-size="24" text-anchor="start">1</text>
+<text x="89" y="125" font-size="43" text-anchor="start" font-weight="bold">A₁</text>
+<path class="wire" d="M183 144 V70 M168 86 L183 70 L198 86" style="stroke:#17212b;stroke-width:4"/>
+<text x="200" y="77" font-size="24" text-anchor="start">1</text>
+<text x="224" y="125" font-size="43" text-anchor="start" font-weight="bold">B₁</text>
+<text x="302" y="125" font-size="43" text-anchor="start" font-weight="bold">B₂</text>
+<path class="wire" d="M396 70 V144 M381 128 L396 144 L411 128" style="stroke:#17212b;stroke-width:4"/>
+<text x="413" y="77" font-size="24" text-anchor="start">2</text>
+<text x="437" y="125" font-size="43" text-anchor="start" font-weight="bold">A₂</text>
+<path class="wire" d="M531 144 V70 M516 86 L531 70 L546 86" style="stroke:#17212b;stroke-width:4"/>
+<text x="548" y="77" font-size="24" text-anchor="start">3</text>
+<text x="572" y="125" font-size="43" text-anchor="start" font-weight="bold">A₃</text>
+<path class="wire" d="M666 144 V70 M651 86 L666 70 L681 86" style="stroke:#17212b;stroke-width:4"/>
+<text x="683" y="77" font-size="24" text-anchor="start">4</text>
+<text x="707" y="125" font-size="43" text-anchor="start" font-weight="bold">A₄</text>
+<path class="wire" d="M801 144 V70 M786 86 L801 70 L816 86" style="stroke:#17212b;stroke-width:4"/>
+<text x="818" y="77" font-size="24" text-anchor="start">5</text>
+<path class="wire" d="M858 144 V70 M843 86 L858 70 L873 86" style="stroke:#17212b;stroke-width:4"/>
+<text x="875" y="77" font-size="24" text-anchor="start">6</text>
+<path class="wire" d="M915 70 V144 M900 128 L915 144 L930 128" style="stroke:#17212b;stroke-width:4"/>
+<text x="932" y="77" font-size="24" text-anchor="start">3</text>
+<text x="956" y="125" font-size="43" text-anchor="start" font-weight="bold">B₃</text>
+<path class="wire" d="M1050 70 V144 M1035 128 L1050 144 L1065 128" style="stroke:#17212b;stroke-width:4"/>
+<text x="1067" y="77" font-size="24" text-anchor="start">4</text>
+<path class="wire" d="M1107 70 V144 M1092 128 L1107 144 L1122 128" style="stroke:#17212b;stroke-width:4"/>
+<text x="1124" y="77" font-size="24" text-anchor="start">6</text>
+<text x="1148" y="125" font-size="43" text-anchor="start" font-weight="bold">B₄</text>
+<path class="wire" d="M1242 70 V144 M1227 128 L1242 144 L1257 128" style="stroke:#17212b;stroke-width:4"/>
+<text x="1259" y="77" font-size="24" text-anchor="start">5</text>
+<text x="1283" y="125" font-size="43" text-anchor="start" font-weight="bold">B₅</text>
+<text x="1361" y="125" font-size="43" text-anchor="start" font-weight="bold">A₅</text>
+<path class="wire" d="M1455 144 V70 M1440 86 L1455 70 L1470 86" style="stroke:#17212b;stroke-width:4"/>
+<text x="1472" y="77" font-size="24" text-anchor="start">2</text>
+<text x="770" y="184" font-size="18" text-anchor="middle">Отдельная ↑⁶ — безусловный переход п. 8. При A₅ = 0 чтение заканчивается.</text>
+</svg>

@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1050" height="1470" viewBox="0 0 1050 1470">
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#17212b"/></marker></defs>
+<rect width="1050" height="1470" fill="white"/>
+<style>text{font-family:Arial,sans-serif;fill:#17212b} .wire{fill:none;stroke:#17212b;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}</style>
+<text x="525.0" y="34" font-size="24" text-anchor="middle" font-weight="bold">Вариант 5. Отмеченная ГСА автомата Мура — с состоянием «Конец»</text>
+<path class="wire" d="M530 96 V135" style="stroke:#17212b;stroke-width:2" marker-end="url(#arrow)"/>
+<path class="wire" d="M615 180 H780 V115 H530 V135" style="stroke:#17212b;stroke-width:2" marker-end="url(#arrow)"/>
+<text x="660" y="172" font-size="20" text-anchor="middle">1</text>
+<circle cx="530" cy="115" r="3" fill="#17212b" stroke="#17212b" stroke-width="2"/>
+<path class="wire" d="M530 225 V256" style="stroke:#17212b;stroke-width:2" marker-end="url(#arrow)"/>
+<text x="550" y="247" font-size="20" text-anchor="middle">0</text>
+<path class="wire" d="M530 324 V356" style="stroke:#17212b;stroke-width:2" marker-end="url(#arrow)"/>
+<path class="wire" d="M530 424 V465" style="stroke:#17212b;stroke-width:2" marker-end="url(#arrow)"/>
+<path class="wire" d="M445 510 H180 V856" style="stroke:#17212b;stroke-width:2" marker-end="url(#arrow)"/>
+<text x="411" y="499" font-size="20" text-anchor="middle">1</text>
+<path class="wire" d="M530 555 V600" style="stroke:#17212b;stroke-width:2" marker-end="url(#arrow)"/>
+<text x="550" y="581" font-size="20" text-anchor="middle">0</text>
+<path class="wire" d="M445 645 H360 V1010 H420" style="stroke:#17212b;stroke-width:2" marker-end="url(#arrow)"/>
+<text x="411" y="634" font-size="20" text-anchor="middle">1</text>
+<path class="wire" d="M530 690 V735" style="stroke:#17212b;stroke-width:2" marker-end="url(#arrow)"/>
+<text x="550" y="719" font-size="20" text-anchor="middle">0</text>
+<path class="wire" d="M530 825 V976" style="stroke:#17212b;stroke-width:2" marker-end="url(#arrow)"/>
+<text x="550" y="857" font-size="20" text-anchor="middle">0</text>
+<text x="552" y="907" font-size="17" text-anchor="start">п. 8 → п. 10</text>
+<path class="wire" d="M615 780 H890 V1140 H640" style="stroke:#17212b;stroke-width:2" marker-end="url(#arrow)"/>
+<text x="660" y="769" font-size="20" text-anchor="middle">1</text>
+<path class="wire" d="M180 924 V1010 H420" style="stroke:#17212b;stroke-width:2" marker-end="url(#arrow)"/>
+<circle cx="360" cy="1010" r="3" fill="#17212b" stroke="#17212b" stroke-width="2"/>
+<path class="wire" d="M530 1044 V1106" style="stroke:#17212b;stroke-width:2" marker-end="url(#arrow)"/>
+<path class="wire" d="M530 1174 V1225" style="stroke:#17212b;stroke-width:2" marker-end="url(#arrow)"/>
+<path class="wire" d="M445 1270 H55 V445 H530 V465" style="stroke:#17212b;stroke-width:2" marker-end="url(#arrow)"/>
+<text x="411" y="1258" font-size="20" text-anchor="middle">1</text>
+<circle cx="530" cy="445" r="3" fill="#17212b" stroke="#17212b" stroke-width="2"/>
+<path class="wire" d="M530 1315 V1364" style="stroke:#17212b;stroke-width:2" marker-end="url(#arrow)"/>
+<text x="550" y="1346" font-size="20" text-anchor="middle">0</text>
+<ellipse cx="530" cy="70" rx="85" ry="26" fill="white" stroke="#17212b" stroke-width="2"/>
+<text x="530" y="78" font-size="23" text-anchor="middle">Начало</text>
+<path d="M530 135 L615 180 L530 225 L445 180 Z" fill="white" stroke="#17212b" stroke-width="2"/>
+<text x="530" y="173" font-size="18" text-anchor="middle">A₁</text>
+<text x="530" y="199" font-size="24" text-anchor="middle">F₂ = 1</text>
+<text x="643" y="152" font-size="17" text-anchor="start">п. 2</text>
+<rect x="420" y="256" width="220" height="68" rx="0" fill="white" stroke="#17212b" stroke-width="2"/>
+<text x="530" y="281" font-size="18" text-anchor="middle">B₁ / S₁</text>
+<text x="530" y="310" font-size="24" text-anchor="middle">Y₁, Y₃, Y₅</text>
+<text x="655" y="275" font-size="17" text-anchor="start">п. 3</text>
+<rect x="420" y="356" width="220" height="68" rx="0" fill="white" stroke="#17212b" stroke-width="2"/>
+<text x="530" y="381" font-size="18" text-anchor="middle">B₂ / S₂</text>
+<text x="530" y="410" font-size="24" text-anchor="middle">Y₂, Y₄</text>
+<text x="655" y="375" font-size="17" text-anchor="start">п. 4</text>
+<path d="M530 465 L615 510 L530 555 L445 510 Z" fill="white" stroke="#17212b" stroke-width="2"/>
+<text x="530" y="503" font-size="18" text-anchor="middle">A₂</text>
+<text x="530" y="529" font-size="24" text-anchor="middle">F₂ = 0</text>
+<text x="643" y="482" font-size="17" text-anchor="start">п. 5</text>
+<path d="M530 600 L615 645 L530 690 L445 645 Z" fill="white" stroke="#17212b" stroke-width="2"/>
+<text x="530" y="638" font-size="18" text-anchor="middle">A₃</text>
+<text x="530" y="664" font-size="24" text-anchor="middle">F₃ = 1</text>
+<text x="643" y="617" font-size="17" text-anchor="start">п. 6</text>
+<path d="M530 735 L615 780 L530 825 L445 780 Z" fill="white" stroke="#17212b" stroke-width="2"/>
+<text x="530" y="773" font-size="18" text-anchor="middle">A₄</text>
+<text x="530" y="799" font-size="24" text-anchor="middle">F₁ = 0</text>
+<text x="643" y="752" font-size="17" text-anchor="start">п. 7</text>
+<rect x="70" y="856" width="220" height="68" rx="0" fill="white" stroke="#17212b" stroke-width="2"/>
+<text x="180" y="881" font-size="18" text-anchor="middle">B₃ / S₃</text>
+<text x="180" y="910" font-size="24" text-anchor="middle">Y₁, Y₄</text>
+<text x="305" y="875" font-size="17" text-anchor="start">п. 9</text>
+<rect x="420" y="976" width="220" height="68" rx="0" fill="white" stroke="#17212b" stroke-width="2"/>
+<text x="530" y="1001" font-size="18" text-anchor="middle">B₄ / S₄</text>
+<text x="530" y="1030" font-size="24" text-anchor="middle">Y₁, Y₅</text>
+<text x="655" y="995" font-size="17" text-anchor="start">п. 10</text>
+<rect x="420" y="1106" width="220" height="68" rx="0" fill="white" stroke="#17212b" stroke-width="2"/>
+<text x="530" y="1131" font-size="18" text-anchor="middle">B₅ / S₅</text>
+<text x="530" y="1160" font-size="24" text-anchor="middle">Y₂, Y₃, Y₅</text>
+<text x="655" y="1125" font-size="17" text-anchor="start">п. 11</text>
+<path d="M530 1225 L615 1270 L530 1315 L445 1270 Z" fill="white" stroke="#17212b" stroke-width="2"/>
+<text x="530" y="1263" font-size="18" text-anchor="middle">A₅</text>
+<text x="530" y="1289" font-size="24" text-anchor="middle">F₁ = 0</text>
+<text x="643" y="1242" font-size="17" text-anchor="start">п. 12</text>
+<ellipse cx="530" cy="1390" rx="85" ry="26" fill="white" stroke="#17212b" stroke-width="2"/>
+<text x="530" y="1398" font-size="23" text-anchor="middle">Конец</text>
+<rect x="650" y="57" width="70" height="30" rx="5" fill="#edf4fb" stroke="#315575" stroke-width="2"/>
+<text x="685" y="80" font-size="22" text-anchor="middle" style="fill:#234d70" font-weight="bold">S₀</text>
+<rect x="650" y="1377" width="70" height="30" rx="5" fill="#edf4fb" stroke="#315575" stroke-width="2"/>
+<text x="685" y="1400" font-size="22" text-anchor="middle" style="fill:#234d70" font-weight="bold">S₆</text>
+<text x="525" y="1450" font-size="17" text-anchor="middle">1 — проверка истинна; 0 — проверка ложна. Метки S обозначают состояния.</text>
+</svg>

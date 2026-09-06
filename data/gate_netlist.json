@@ -1,0 +1,544 @@
+{
+  "inputs": [
+    "X1",
+    "X2",
+    "X3",
+    "X4",
+    "q2",
+    "q1",
+    "q0",
+    "RESET"
+  ],
+  "clock": "simultaneous rising edge",
+  "gates": [
+    {
+      "name": "nX1",
+      "op": "NOT",
+      "inputs": [
+        "X1"
+      ]
+    },
+    {
+      "name": "nX2",
+      "op": "NOT",
+      "inputs": [
+        "X2"
+      ]
+    },
+    {
+      "name": "nX3",
+      "op": "NOT",
+      "inputs": [
+        "X3"
+      ]
+    },
+    {
+      "name": "nX4",
+      "op": "NOT",
+      "inputs": [
+        "X4"
+      ]
+    },
+    {
+      "name": "nq2",
+      "op": "NOT",
+      "inputs": [
+        "q2"
+      ]
+    },
+    {
+      "name": "nq1",
+      "op": "NOT",
+      "inputs": [
+        "q1"
+      ]
+    },
+    {
+      "name": "nq0",
+      "op": "NOT",
+      "inputs": [
+        "q0"
+      ]
+    },
+    {
+      "name": "nRESET",
+      "op": "NOT",
+      "inputs": [
+        "RESET"
+      ]
+    },
+    {
+      "name": "p11",
+      "op": "AND",
+      "inputs": [
+        "nX1",
+        "nX2"
+      ]
+    },
+    {
+      "name": "p12",
+      "op": "AND",
+      "inputs": [
+        "X1",
+        "X3"
+      ]
+    },
+    {
+      "name": "p13",
+      "op": "AND",
+      "inputs": [
+        "X2",
+        "nX3"
+      ]
+    },
+    {
+      "name": "p14",
+      "op": "AND",
+      "inputs": [
+        "X2",
+        "nX4"
+      ]
+    },
+    {
+      "name": "F1",
+      "op": "OR",
+      "inputs": [
+        "p11",
+        "p12",
+        "p13",
+        "p14"
+      ]
+    },
+    {
+      "name": "p21",
+      "op": "AND",
+      "inputs": [
+        "X1",
+        "nX3"
+      ]
+    },
+    {
+      "name": "F2",
+      "op": "OR",
+      "inputs": [
+        "nX2",
+        "p21"
+      ]
+    },
+    {
+      "name": "F3",
+      "op": "OR",
+      "inputs": [
+        "nX1",
+        "X2",
+        "X3"
+      ]
+    },
+    {
+      "name": "nF1",
+      "op": "NOT",
+      "inputs": [
+        "F1"
+      ]
+    },
+    {
+      "name": "nF2",
+      "op": "NOT",
+      "inputs": [
+        "F2"
+      ]
+    },
+    {
+      "name": "nF3",
+      "op": "NOT",
+      "inputs": [
+        "F3"
+      ]
+    },
+    {
+      "name": "z0",
+      "op": "AND",
+      "inputs": [
+        "nq2",
+        "nq1",
+        "nq0"
+      ]
+    },
+    {
+      "name": "z1",
+      "op": "AND",
+      "inputs": [
+        "nq2",
+        "nq1",
+        "q0"
+      ]
+    },
+    {
+      "name": "z2",
+      "op": "AND",
+      "inputs": [
+        "nq2",
+        "q1",
+        "nq0"
+      ]
+    },
+    {
+      "name": "z3",
+      "op": "AND",
+      "inputs": [
+        "nq2",
+        "q1",
+        "q0"
+      ]
+    },
+    {
+      "name": "z4",
+      "op": "AND",
+      "inputs": [
+        "q2",
+        "nq1",
+        "nq0"
+      ]
+    },
+    {
+      "name": "z5",
+      "op": "AND",
+      "inputs": [
+        "q2",
+        "nq1",
+        "q0"
+      ]
+    },
+    {
+      "name": "z6",
+      "op": "AND",
+      "inputs": [
+        "q2",
+        "q1",
+        "nq0"
+      ]
+    },
+    {
+      "name": "z7",
+      "op": "AND",
+      "inputs": [
+        "q2",
+        "q1",
+        "q0"
+      ]
+    },
+    {
+      "name": "t1",
+      "op": "AND",
+      "inputs": [
+        "z0",
+        "nF2"
+      ]
+    },
+    {
+      "name": "t2",
+      "op": "BUF",
+      "inputs": [
+        "z1"
+      ]
+    },
+    {
+      "name": "h53",
+      "op": "AND",
+      "inputs": [
+        "z5",
+        "nF1"
+      ]
+    },
+    {
+      "name": "h3",
+      "op": "OR",
+      "inputs": [
+        "z2",
+        "h53"
+      ]
+    },
+    {
+      "name": "t3",
+      "op": "AND",
+      "inputs": [
+        "nF2",
+        "h3"
+      ]
+    },
+    {
+      "name": "h41",
+      "op": "OR",
+      "inputs": [
+        "F3",
+        "F1"
+      ]
+    },
+    {
+      "name": "h42",
+      "op": "AND",
+      "inputs": [
+        "z2",
+        "F2",
+        "h41"
+      ]
+    },
+    {
+      "name": "h43",
+      "op": "AND",
+      "inputs": [
+        "z5",
+        "nF1",
+        "F2",
+        "F3"
+      ]
+    },
+    {
+      "name": "t4",
+      "op": "OR",
+      "inputs": [
+        "z3",
+        "h42",
+        "h43"
+      ]
+    },
+    {
+      "name": "h51",
+      "op": "OR",
+      "inputs": [
+        "z2",
+        "z5"
+      ]
+    },
+    {
+      "name": "h52",
+      "op": "AND",
+      "inputs": [
+        "F2",
+        "nF3",
+        "nF1",
+        "h51"
+      ]
+    },
+    {
+      "name": "t5",
+      "op": "OR",
+      "inputs": [
+        "z4",
+        "h52"
+      ]
+    },
+    {
+      "name": "h61",
+      "op": "AND",
+      "inputs": [
+        "z5",
+        "F1"
+      ]
+    },
+    {
+      "name": "t6",
+      "op": "OR",
+      "inputs": [
+        "z6",
+        "h61"
+      ]
+    },
+    {
+      "name": "N2",
+      "op": "OR",
+      "inputs": [
+        "t4",
+        "t5",
+        "t6"
+      ]
+    },
+    {
+      "name": "N1",
+      "op": "OR",
+      "inputs": [
+        "t2",
+        "t3",
+        "t6"
+      ]
+    },
+    {
+      "name": "N0",
+      "op": "OR",
+      "inputs": [
+        "t1",
+        "t3",
+        "t5"
+      ]
+    },
+    {
+      "name": "nN2",
+      "op": "NOT",
+      "inputs": [
+        "N2"
+      ]
+    },
+    {
+      "name": "S2",
+      "op": "AND",
+      "inputs": [
+        "nRESET",
+        "nq2",
+        "N2"
+      ]
+    },
+    {
+      "name": "hr2",
+      "op": "OR",
+      "inputs": [
+        "RESET",
+        "nN2"
+      ]
+    },
+    {
+      "name": "R2",
+      "op": "AND",
+      "inputs": [
+        "q2",
+        "hr2"
+      ]
+    },
+    {
+      "name": "D2",
+      "op": "AND",
+      "inputs": [
+        "nRESET",
+        "N2"
+      ]
+    },
+    {
+      "name": "nN1",
+      "op": "NOT",
+      "inputs": [
+        "N1"
+      ]
+    },
+    {
+      "name": "S1",
+      "op": "AND",
+      "inputs": [
+        "nRESET",
+        "nq1",
+        "N1"
+      ]
+    },
+    {
+      "name": "hr1",
+      "op": "OR",
+      "inputs": [
+        "RESET",
+        "nN1"
+      ]
+    },
+    {
+      "name": "R1",
+      "op": "AND",
+      "inputs": [
+        "q1",
+        "hr1"
+      ]
+    },
+    {
+      "name": "D1",
+      "op": "AND",
+      "inputs": [
+        "nRESET",
+        "N1"
+      ]
+    },
+    {
+      "name": "nN0",
+      "op": "NOT",
+      "inputs": [
+        "N0"
+      ]
+    },
+    {
+      "name": "S0",
+      "op": "AND",
+      "inputs": [
+        "nRESET",
+        "nq0",
+        "N0"
+      ]
+    },
+    {
+      "name": "hr0",
+      "op": "OR",
+      "inputs": [
+        "RESET",
+        "nN0"
+      ]
+    },
+    {
+      "name": "R0",
+      "op": "AND",
+      "inputs": [
+        "q0",
+        "hr0"
+      ]
+    },
+    {
+      "name": "D0",
+      "op": "AND",
+      "inputs": [
+        "nRESET",
+        "N0"
+      ]
+    },
+    {
+      "name": "Y1",
+      "op": "OR",
+      "inputs": [
+        "z1",
+        "z3",
+        "z4"
+      ]
+    },
+    {
+      "name": "Y2",
+      "op": "OR",
+      "inputs": [
+        "z2",
+        "z5"
+      ]
+    },
+    {
+      "name": "Y3",
+      "op": "OR",
+      "inputs": [
+        "z1",
+        "z5"
+      ]
+    },
+    {
+      "name": "Y4",
+      "op": "OR",
+      "inputs": [
+        "z2",
+        "z3"
+      ]
+    },
+    {
+      "name": "Y5",
+      "op": "OR",
+      "inputs": [
+        "z1",
+        "z4",
+        "z5"
+      ]
+    },
+    {
+      "name": "DONE",
+      "op": "BUF",
+      "inputs": [
+        "z6"
+      ]
+    }
+  ]
+}
