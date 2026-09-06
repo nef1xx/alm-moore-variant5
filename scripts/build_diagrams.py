@@ -10,6 +10,7 @@ from ulu.minimize import covers, format_term
 from ulu.netlist import GATES
 from ulu.reference import LSA
 from svg_tools import SVG
+from hardware_table import FIELDS
 
 OUT = ROOT/'diagrams'
 OUT.mkdir(exist_ok=True)
@@ -163,9 +164,111 @@ def gate_sheet(name,title,names):
     for i,g in enumerate(gates):
         x=155+(i%cols)*475;y=128+(i//cols)*155
         s.gate(x,y,g['name'],g['op'],g['inputs'])
-    s.text(725,s.height-18,'& — И; ≥1 — ИЛИ; кружок на выходе — НЕ; 1 без кружка — повторитель.',17)
+    s.text(725,s.height-18,'& — И; 1 с несколькими входами — ИЛИ; кружок на выходе — НЕ; 1 с одним входом — повторитель.',17)
     s.save(OUT/name)
     return {g['name'] for g in gates}
+
+
+def input_circuit(names):
+    """Полная проводная схема F: каждый вход вентиля берётся из GATES."""
+    s = SVG(1420,1340,'7. Схема формирования входных сигналов УЛУ')
+    s.text(710,70,'Минимизированные функции F₁, F₂, F₃ в базисе И, ИЛИ, НЕ',21)
+    gates = {g['name']: g for g in GATES if g['name'] in names}
+    # Геометрия задаёт только размещение; функции и потребители — из netlist.
+    layout = {f'nX{i+1}': (x+20,140,50,50) for i,x in enumerate((120,295,470,645))}
+    layout.update({n: (875,y,78,70) for n,y in
+                   zip(('p11','p12','p13','p14','p21'),(295,395,495,595,765))})
+    layout.update({'F1': (1160,270,78,380), 'F2': (1160,755,78,90),
+                   'F3': (1160,950,78,130)})
+    assert set(layout) == names
+    ports, sources, branches, routes, connections = {}, {}, {}, [], set()
+
+    def wire(net, *points):
+        # Сохраняем имя цепи в SVG для аудита проводов и их источника.
+        for a,b in zip(points,points[1:]):
+            assert a != b and (a[0] == b[0] or a[1] == b[1]), (net,a,b)
+        routes.append((net, points))
+        s.parts.append(f'<g data-net="{net}">')
+        s.path('M'+' L'.join(f'{x} {y}' for x,y in points))
+        s.parts.append('</g>')
+
+    for name,g in gates.items():
+        x,y,w,h = layout[name]
+        ports[name] = [(x,y+(i+1)*h/(len(g['inputs'])+1)) for i in range(len(g['inputs']))]
+        sources[name] = (x+w+(10 if g['op']=='NOT' else 0),y+h/2)
+
+    # Четыре внешних входа, общие инверторы и отдельные вертикальные провода.
+    rails = {}
+    for i,x in enumerate((120,295,470,645),1):
+        name,inv = f'X{i}',f'nX{i}'
+        sources[name] = (x,120)
+        rails[name],rails[inv] = x,x+90
+        branches[name],branches[inv] = [165],[165]
+        wire(name, (x,165), ports[inv][0])
+        connections.add((inv,0))
+        wire(inv, sources[inv], (x+90,165))
+        s.text(x,108,sub(name),23,weight='bold')
+        s.text(x+100,220,'¬'+sub(name),20,'start')
+
+    for name,g in gates.items():
+        if g['op'] == 'NOT':
+            continue
+        for i,net in enumerate(g['inputs']):
+            target = ports[name][i]
+            if net in rails:
+                # Провод ¬X₂ к F₂ проходит над p21, не сквозь его корпус.
+                by = 730 if name == 'F2' and net == 'nX2' else target[1]
+                origin = (rails[net],by)
+                if by != target[1]:
+                    wire(net, origin, (1100,by), (1100,target[1]), target)
+                else:
+                    wire(net, origin, target)
+                branches[net].append(by)
+            else:
+                origin = sources[net]
+                wire(net, origin, (1050,origin[1]), (1050,target[1]), target)
+                s.text(980,origin[1]-9,net,16)
+            connections.add((name,i))
+
+    # Рисуем провод до последнего потребителя; точка означает соединение.
+    for net,x in rails.items():
+        start = sources[net][1] if net.startswith('X') else 165
+        end = max(branches[net])
+        if start != end:
+            wire(net, (x,start), (x,end))
+        for y in set(branches[net]):
+            if start < y < end:
+                s.circle(x,y,3.5,fill='#17212b')
+    for i in (1,2,3):
+        name = f'F{i}'
+        x,y = sources[name]
+        wire(name,(x,y),(1340,y))
+        s.text(1360,y+7,sub(name),24,'start',weight='bold')
+
+    # Проводам не разрешено проходить через корпус какого-либо элемента.
+    for net,points in routes:
+        for (ax,ay),(bx,by) in zip(points,points[1:]):
+            for name,(x,y,w,h) in layout.items():
+                crosses = (ay == by and y < ay < y+h and max(min(ax,bx),x) < min(max(ax,bx),x+w)) or (
+                    ax == bx and x < ax < x+w and max(min(ay,by),y) < min(max(ay,by),y+h))
+                assert not crosses, (net,'wire crosses gate',name)
+    assert connections == {(name,i) for name,g in gates.items() for i in range(len(g['inputs']))}
+    for name,g in gates.items():
+        x,y,w,h = layout[name]
+        s.parts.append(f'<g data-gate="{name}" data-op="{g["op"]}">')
+        s.gate_body(x,y,w,h,g['op'])
+        if not name.startswith('nX'):
+            s.text(x+w/2,y-10,name,17)
+        s.parts.append('</g>')
+
+    s.path('M60 1120 H1360',color='#b2bec9',width=1)
+    for i,cover in enumerate(SELECTED_COVERS):
+        s.text(710,1160+i*35,sub(f'F{i+1}')+' = '+' ∨ '.join(fi_term(p) for p in cover),23)
+    s.circle(110,1273,3.5,fill='#17212b')
+    s.text(130,1280,'— соединение; пересечение без точки — без соединения.',18,'start')
+    s.text(710,1313,'& — И; 1 — ИЛИ; 1 с кружком на выходе — НЕ. 4 НЕ + 5 И + 3 ИЛИ = 12 элементов.',18)
+    s.save(OUT/'07_input_logic.svg')
+    return set(gates)
 
 
 def register():
@@ -219,6 +322,46 @@ def overview():
     s.save(OUT/'08a_hardware_overview.svg')
 
 
+def hardware_table():
+    data = json.loads((ROOT/'data/hardware_implementation.json').read_text(encoding='utf-8'))
+    s = SVG(1520,980,'Аппаратная реализация управляющего автомата УЛУ')
+    s.text(760,72,'Вариант 5. Автомат Мура S₀…S₆. RESET = 0. Код состояния: q₂q₁q₀.',21)
+    widths = (150,185,150,185,250,235,285)
+    x0, y0, header_h, row_h = 40,110,74,42
+    edges = [x0]
+    for w in widths:
+        edges.append(edges[-1]+w)
+    bottom = y0+header_h+len(data['rows'])*row_h
+    s.rect(x0,y0,sum(widths),bottom-y0,width=1.5)
+    for x in edges[1:-1]:
+        s.path(f'M{x} {y0} V{bottom}',width=1)
+    for i in range(len(data['rows'])):
+        y = y0+header_h+i*row_h
+        s.path(f'M{x0} {y} H{edges[-1]}',width=1)
+    headers = (('Начальное','состояние'), ('Код нач.','состояния'),
+               ('Конечное','состояние'), ('Код кон.','состояния'),
+               ('Входные сигналы','Fᵢ'), ('Выходные сигналы','Yⱼ'),
+               ('Функция','возбуждения RS'))
+    for col, lines in enumerate(headers):
+        x = (edges[col]+edges[col+1])/2
+        for i,line in enumerate(lines):
+            s.text(x,y0+29+i*28,line,21)
+    for i,row in enumerate(data['rows']):
+        for col,field in enumerate(FIELDS):
+            value = row[field] if field in ('code','next_code') or row[field] == '1' else sub(row[field])
+            s.text((edges[col]+edges[col+1])/2,y0+header_h+i*row_h+28,value,23)
+    notes = (
+        'Yⱼ — активные выходы начального состояния; «—» — все сигналы в соответствующем столбце равны 0.',
+        'В столбце RS указаны только активные входы: S₂/R₂ → q₂, S₁/R₁ → q₁, S₀/R₀ → q₀.',
+        '¬ — НЕ; соседство F — И; ∨ — ИЛИ; 1 в столбце Fᵢ — любой набор F. «Неисп.» — код 111.',
+        'При RESET = 1: переход в S₀ на фронте CLK; Sₖ = 0, Rₖ = qₖ. В S₆ автомат остаётся до сброса.',
+        'Условия заданы на всех 8 наборах F; ветка S₅ → S₄ не достигается при реальных F(X).',
+    )
+    for i,note in enumerate(notes):
+        s.text(40,bottom+38+i*31,note,19,'start')
+    s.save(OUT/'08g_hardware_table.svg')
+
+
 def timing():
     trace=json.loads((ROOT/'data/demo_trace.json').read_text(encoding='utf-8'))
     from ulu.model import OUTPUTS
@@ -264,13 +407,13 @@ def main():
     outputs={f'Y{i}' for i in range(1,6)}|{'DONE'}
     transition=names-inp-decoder-excitation-outputs
     rendered=set()
-    rendered|=gate_sheet('07_input_logic.svg','Формирование входных сигналов F₁, F₂, F₃',inp)
+    rendered|=input_circuit(inp)
     rendered|=gate_sheet('08b_state_decoder.svg','Дешифратор состояния — z₀…z₇',decoder)
     rendered|=gate_sheet('08c_transition_logic.svg','Логика переходов — t₁…t₆ и N₂,N₁,N₀',transition)
     rendered|=gate_sheet('08d_excitation_logic.svg','Функции возбуждения S,R и эквивалентные входы D',excitation)
     rendered|=gate_sheet('08f_output_logic.svg','Формирование выходов Y₁…Y₅ и DONE',outputs)
     assert rendered==names, names-rendered
-    register();overview();timing()
+    register();overview();hardware_table();timing()
     print(f'Generated {len(list(OUT.glob("*.svg")))} SVG diagrams; every netlist gate is drawn.')
 
 

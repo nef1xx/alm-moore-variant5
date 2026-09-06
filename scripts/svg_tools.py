@@ -45,18 +45,22 @@ class SVG:
     def gate(self, x, y, name, op, inputs, output=None):
         """Вентиль с явно именованными цепями: одинаковое имя = соединение."""
         h = max(54, len(inputs)*23+12)
-        self.rect(x,y,78,h)
-        symbol = {'AND':'&','OR':'≥1','NOT':'1','BUF':'1'}[op]
-        self.text(x+39,y+h/2+7,symbol,23)
+        self.gate_body(x, y, 78, h, op)
         for i, inp in enumerate(inputs):
             iy = y + (i+1)*h/(len(inputs)+1)
             self.path(f'M{x-32} {iy} H{x}')
             self.text(x-39,iy+5,inp,16,'end')
         end=x+78
         if op=='NOT':
-            self.circle(end+5,y+h/2,5)
             end+=10
         self.path(f'M{end} {y+h/2} H{x+126}')
         self.text(x+135,y+h/2+5,output or name,17,'start')
         self.text(x+39,y-8,name,15,color='#52616f')
         return h
+
+    def gate_body(self, x, y, w, h, op):
+        """Прямоугольное УГО; инверсия обозначена пустым кружком на выходе."""
+        self.rect(x,y,w,h)
+        self.text(x+w/2,y+h/2+7,{'AND':'&','OR':'1','NOT':'1','BUF':'1'}[op],23)
+        if op == 'NOT':
+            self.circle(x+w+5,y+h/2,5)

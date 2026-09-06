@@ -5,31 +5,31 @@
 <text x="725.0" y="34" font-size="24" text-anchor="middle" font-weight="bold">Дешифратор состояния — z₀…z₇</text>
 <text x="725" y="70" font-size="17" text-anchor="middle">Именованные цепи: одинаковые подписи означают электрическое соединение, в том числе между листами.</text>
 <rect x="155" y="128" width="78" height="54" rx="0" fill="white" stroke="#17212b" stroke-width="2"/>
-<text x="194" y="162.0" font-size="23" text-anchor="middle">1</text>
+<text x="194.0" y="162.0" font-size="23" text-anchor="middle">1</text>
+<circle cx="238" cy="155.0" r="5" fill="white" stroke="#17212b" stroke-width="2"/>
 <path class="wire" d="M123 155.0 H155" style="stroke:#17212b;stroke-width:2"/>
 <text x="116" y="160.0" font-size="16" text-anchor="end">q2</text>
-<circle cx="238" cy="155.0" r="5" fill="white" stroke="#17212b" stroke-width="2"/>
 <path class="wire" d="M243 155.0 H281" style="stroke:#17212b;stroke-width:2"/>
 <text x="290" y="160.0" font-size="17" text-anchor="start">nq2</text>
 <text x="194" y="120" font-size="15" text-anchor="middle" style="fill:#52616f">nq2</text>
 <rect x="630" y="128" width="78" height="54" rx="0" fill="white" stroke="#17212b" stroke-width="2"/>
-<text x="669" y="162.0" font-size="23" text-anchor="middle">1</text>
+<text x="669.0" y="162.0" font-size="23" text-anchor="middle">1</text>
+<circle cx="713" cy="155.0" r="5" fill="white" stroke="#17212b" stroke-width="2"/>
 <path class="wire" d="M598 155.0 H630" style="stroke:#17212b;stroke-width:2"/>
 <text x="591" y="160.0" font-size="16" text-anchor="end">q1</text>
-<circle cx="713" cy="155.0" r="5" fill="white" stroke="#17212b" stroke-width="2"/>
 <path class="wire" d="M718 155.0 H756" style="stroke:#17212b;stroke-width:2"/>
 <text x="765" y="160.0" font-size="17" text-anchor="start">nq1</text>
 <text x="669" y="120" font-size="15" text-anchor="middle" style="fill:#52616f">nq1</text>
 <rect x="1105" y="128" width="78" height="54" rx="0" fill="white" stroke="#17212b" stroke-width="2"/>
-<text x="1144" y="162.0" font-size="23" text-anchor="middle">1</text>
+<text x="1144.0" y="162.0" font-size="23" text-anchor="middle">1</text>
+<circle cx="1188" cy="155.0" r="5" fill="white" stroke="#17212b" stroke-width="2"/>
 <path class="wire" d="M1073 155.0 H1105" style="stroke:#17212b;stroke-width:2"/>
 <text x="1066" y="160.0" font-size="16" text-anchor="end">q0</text>
-<circle cx="1188" cy="155.0" r="5" fill="white" stroke="#17212b" stroke-width="2"/>
 <path class="wire" d="M1193 155.0 H1231" style="stroke:#17212b;stroke-width:2"/>
 <text x="1240" y="160.0" font-size="17" text-anchor="start">nq0</text>
 <text x="1144" y="120" font-size="15" text-anchor="middle" style="fill:#52616f">nq0</text>
 <rect x="155" y="283" width="78" height="81" rx="0" fill="white" stroke="#17212b" stroke-width="2"/>
-<text x="194" y="330.5" font-size="23" text-anchor="middle">&amp;</text>
+<text x="194.0" y="330.5" font-size="23" text-anchor="middle">&amp;</text>
 <path class="wire" d="M123 303.25 H155" style="stroke:#17212b;stroke-width:2"/>
 <text x="116" y="308.25" font-size="16" text-anchor="end">nq2</text>
 <path class="wire" d="M123 323.5 H155" style="stroke:#17212b;stroke-width:2"/>
@@ -40,7 +40,7 @@
 <text x="290" y="328.5" font-size="17" text-anchor="start">z0</text>
 <text x="194" y="275" font-size="15" text-anchor="middle" style="fill:#52616f">z0</text>
 <rect x="630" y="283" width="78" height="81" rx="0" fill="white" stroke="#17212b" stroke-width="2"/>
-<text x="669" y="330.5" font-size="23" text-anchor="middle">&amp;</text>
+<text x="669.0" y="330.5" font-size="23" text-anchor="middle">&amp;</text>
 <path class="wire" d="M598 303.25 H630" style="stroke:#17212b;stroke-width:2"/>
 <text x="591" y="308.25" font-size="16" text-anchor="end">nq2</text>
 <path class="wire" d="M598 323.5 H630" style="stroke:#17212b;stroke-width:2"/>
@@ -51,7 +51,7 @@
 <text x="765" y="328.5" font-size="17" text-anchor="start">z1</text>
 <text x="669" y="275" font-size="15" text-anchor="middle" style="fill:#52616f">z1</text>
 <rect x="1105" y="283" width="78" height="81" rx="0" fill="white" stroke="#17212b" stroke-width="2"/>
-<text x="1144" y="330.5" font-size="23" text-anchor="middle">&amp;</text>
+<text x="1144.0" y="330.5" font-size="23" text-anchor="middle">&amp;</text>
 <path class="wire" d="M1073 303.25 H1105" style="stroke:#17212b;stroke-width:2"/>
 <text x="1066" y="308.25" font-size="16" text-anchor="end">nq2</text>
 <path class="wire" d="M1073 323.5 H1105" style="stroke:#17212b;stroke-width:2"/>
@@ -62,7 +62,7 @@
 <text x="1240" y="328.5" font-size="17" text-anchor="start">z2</text>
 <text x="1144" y="275" font-size="15" text-anchor="middle" style="fill:#52616f">z2</text>
 <rect x="155" y="438" width="78" height="81" rx="0" fill="white" stroke="#17212b" stroke-width="2"/>
-<text x="194" y="485.5" font-size="23" text-anchor="middle">&amp;</text>
+<text x="194.0" y="485.5" font-size="23" text-anchor="middle">&amp;</text>
 <path class="wire" d="M123 458.25 H155" style="stroke:#17212b;stroke-width:2"/>
 <text x="116" y="463.25" font-size="16" text-anchor="end">nq2</text>
 <path class="wire" d="M123 478.5 H155" style="stroke:#17212b;stroke-width:2"/>
@@ -73,7 +73,7 @@
 <text x="290" y="483.5" font-size="17" text-anchor="start">z3</text>
 <text x="194" y="430" font-size="15" text-anchor="middle" style="fill:#52616f">z3</text>
 <rect x="630" y="438" width="78" height="81" rx="0" fill="white" stroke="#17212b" stroke-width="2"/>
-<text x="669" y="485.5" font-size="23" text-anchor="middle">&amp;</text>
+<text x="669.0" y="485.5" font-size="23" text-anchor="middle">&amp;</text>
 <path class="wire" d="M598 458.25 H630" style="stroke:#17212b;stroke-width:2"/>
 <text x="591" y="463.25" font-size="16" text-anchor="end">q2</text>
 <path class="wire" d="M598 478.5 H630" style="stroke:#17212b;stroke-width:2"/>
@@ -84,7 +84,7 @@
 <text x="765" y="483.5" font-size="17" text-anchor="start">z4</text>
 <text x="669" y="430" font-size="15" text-anchor="middle" style="fill:#52616f">z4</text>
 <rect x="1105" y="438" width="78" height="81" rx="0" fill="white" stroke="#17212b" stroke-width="2"/>
-<text x="1144" y="485.5" font-size="23" text-anchor="middle">&amp;</text>
+<text x="1144.0" y="485.5" font-size="23" text-anchor="middle">&amp;</text>
 <path class="wire" d="M1073 458.25 H1105" style="stroke:#17212b;stroke-width:2"/>
 <text x="1066" y="463.25" font-size="16" text-anchor="end">q2</text>
 <path class="wire" d="M1073 478.5 H1105" style="stroke:#17212b;stroke-width:2"/>
@@ -95,7 +95,7 @@
 <text x="1240" y="483.5" font-size="17" text-anchor="start">z5</text>
 <text x="1144" y="430" font-size="15" text-anchor="middle" style="fill:#52616f">z5</text>
 <rect x="155" y="593" width="78" height="81" rx="0" fill="white" stroke="#17212b" stroke-width="2"/>
-<text x="194" y="640.5" font-size="23" text-anchor="middle">&amp;</text>
+<text x="194.0" y="640.5" font-size="23" text-anchor="middle">&amp;</text>
 <path class="wire" d="M123 613.25 H155" style="stroke:#17212b;stroke-width:2"/>
 <text x="116" y="618.25" font-size="16" text-anchor="end">q2</text>
 <path class="wire" d="M123 633.5 H155" style="stroke:#17212b;stroke-width:2"/>
@@ -106,7 +106,7 @@
 <text x="290" y="638.5" font-size="17" text-anchor="start">z6</text>
 <text x="194" y="585" font-size="15" text-anchor="middle" style="fill:#52616f">z6</text>
 <rect x="630" y="593" width="78" height="81" rx="0" fill="white" stroke="#17212b" stroke-width="2"/>
-<text x="669" y="640.5" font-size="23" text-anchor="middle">&amp;</text>
+<text x="669.0" y="640.5" font-size="23" text-anchor="middle">&amp;</text>
 <path class="wire" d="M598 613.25 H630" style="stroke:#17212b;stroke-width:2"/>
 <text x="591" y="618.25" font-size="16" text-anchor="end">q2</text>
 <path class="wire" d="M598 633.5 H630" style="stroke:#17212b;stroke-width:2"/>
@@ -116,5 +116,5 @@
 <path class="wire" d="M708 633.5 H756" style="stroke:#17212b;stroke-width:2"/>
 <text x="765" y="638.5" font-size="17" text-anchor="start">z7</text>
 <text x="669" y="585" font-size="15" text-anchor="middle" style="fill:#52616f">z7</text>
-<text x="725" y="757" font-size="17" text-anchor="middle">&amp; — И; ≥1 — ИЛИ; кружок на выходе — НЕ; 1 без кружка — повторитель.</text>
+<text x="725" y="757" font-size="17" text-anchor="middle">&amp; — И; 1 с несколькими входами — ИЛИ; кружок на выходе — НЕ; 1 с одним входом — повторитель.</text>
 </svg>

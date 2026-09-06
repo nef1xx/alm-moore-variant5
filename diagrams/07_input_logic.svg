@@ -1,118 +1,214 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1450" height="775" viewBox="0 0 1450 775">
+<svg xmlns="http://www.w3.org/2000/svg" width="1420" height="1340" viewBox="0 0 1420 1340">
 <defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#17212b"/></marker></defs>
-<rect width="1450" height="775" fill="white"/>
+<rect width="1420" height="1340" fill="white"/>
 <style>text{font-family:Arial,sans-serif;fill:#17212b} .wire{fill:none;stroke:#17212b;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}</style>
-<text x="725.0" y="34" font-size="24" text-anchor="middle" font-weight="bold">Формирование входных сигналов F₁, F₂, F₃</text>
-<text x="725" y="70" font-size="17" text-anchor="middle">Именованные цепи: одинаковые подписи означают электрическое соединение, в том числе между листами.</text>
-<rect x="155" y="128" width="78" height="54" rx="0" fill="white" stroke="#17212b" stroke-width="2"/>
-<text x="194" y="162.0" font-size="23" text-anchor="middle">1</text>
-<path class="wire" d="M123 155.0 H155" style="stroke:#17212b;stroke-width:2"/>
-<text x="116" y="160.0" font-size="16" text-anchor="end">X1</text>
-<circle cx="238" cy="155.0" r="5" fill="white" stroke="#17212b" stroke-width="2"/>
-<path class="wire" d="M243 155.0 H281" style="stroke:#17212b;stroke-width:2"/>
-<text x="290" y="160.0" font-size="17" text-anchor="start">nX1</text>
-<text x="194" y="120" font-size="15" text-anchor="middle" style="fill:#52616f">nX1</text>
-<rect x="630" y="128" width="78" height="54" rx="0" fill="white" stroke="#17212b" stroke-width="2"/>
-<text x="669" y="162.0" font-size="23" text-anchor="middle">1</text>
-<path class="wire" d="M598 155.0 H630" style="stroke:#17212b;stroke-width:2"/>
-<text x="591" y="160.0" font-size="16" text-anchor="end">X2</text>
-<circle cx="713" cy="155.0" r="5" fill="white" stroke="#17212b" stroke-width="2"/>
-<path class="wire" d="M718 155.0 H756" style="stroke:#17212b;stroke-width:2"/>
-<text x="765" y="160.0" font-size="17" text-anchor="start">nX2</text>
-<text x="669" y="120" font-size="15" text-anchor="middle" style="fill:#52616f">nX2</text>
-<rect x="1105" y="128" width="78" height="54" rx="0" fill="white" stroke="#17212b" stroke-width="2"/>
-<text x="1144" y="162.0" font-size="23" text-anchor="middle">1</text>
-<path class="wire" d="M1073 155.0 H1105" style="stroke:#17212b;stroke-width:2"/>
-<text x="1066" y="160.0" font-size="16" text-anchor="end">X3</text>
-<circle cx="1188" cy="155.0" r="5" fill="white" stroke="#17212b" stroke-width="2"/>
-<path class="wire" d="M1193 155.0 H1231" style="stroke:#17212b;stroke-width:2"/>
-<text x="1240" y="160.0" font-size="17" text-anchor="start">nX3</text>
-<text x="1144" y="120" font-size="15" text-anchor="middle" style="fill:#52616f">nX3</text>
-<rect x="155" y="283" width="78" height="54" rx="0" fill="white" stroke="#17212b" stroke-width="2"/>
-<text x="194" y="317.0" font-size="23" text-anchor="middle">1</text>
-<path class="wire" d="M123 310.0 H155" style="stroke:#17212b;stroke-width:2"/>
-<text x="116" y="315.0" font-size="16" text-anchor="end">X4</text>
-<circle cx="238" cy="310.0" r="5" fill="white" stroke="#17212b" stroke-width="2"/>
-<path class="wire" d="M243 310.0 H281" style="stroke:#17212b;stroke-width:2"/>
-<text x="290" y="315.0" font-size="17" text-anchor="start">nX4</text>
-<text x="194" y="275" font-size="15" text-anchor="middle" style="fill:#52616f">nX4</text>
-<rect x="630" y="283" width="78" height="58" rx="0" fill="white" stroke="#17212b" stroke-width="2"/>
-<text x="669" y="319.0" font-size="23" text-anchor="middle">&amp;</text>
-<path class="wire" d="M598 302.3333333333333 H630" style="stroke:#17212b;stroke-width:2"/>
-<text x="591" y="307.3333333333333" font-size="16" text-anchor="end">nX1</text>
-<path class="wire" d="M598 321.6666666666667 H630" style="stroke:#17212b;stroke-width:2"/>
-<text x="591" y="326.6666666666667" font-size="16" text-anchor="end">nX2</text>
-<path class="wire" d="M708 312.0 H756" style="stroke:#17212b;stroke-width:2"/>
-<text x="765" y="317.0" font-size="17" text-anchor="start">p11</text>
-<text x="669" y="275" font-size="15" text-anchor="middle" style="fill:#52616f">p11</text>
-<rect x="1105" y="283" width="78" height="58" rx="0" fill="white" stroke="#17212b" stroke-width="2"/>
-<text x="1144" y="319.0" font-size="23" text-anchor="middle">&amp;</text>
-<path class="wire" d="M1073 302.3333333333333 H1105" style="stroke:#17212b;stroke-width:2"/>
-<text x="1066" y="307.3333333333333" font-size="16" text-anchor="end">X1</text>
-<path class="wire" d="M1073 321.6666666666667 H1105" style="stroke:#17212b;stroke-width:2"/>
-<text x="1066" y="326.6666666666667" font-size="16" text-anchor="end">X3</text>
-<path class="wire" d="M1183 312.0 H1231" style="stroke:#17212b;stroke-width:2"/>
-<text x="1240" y="317.0" font-size="17" text-anchor="start">p12</text>
-<text x="1144" y="275" font-size="15" text-anchor="middle" style="fill:#52616f">p12</text>
-<rect x="155" y="438" width="78" height="58" rx="0" fill="white" stroke="#17212b" stroke-width="2"/>
-<text x="194" y="474.0" font-size="23" text-anchor="middle">&amp;</text>
-<path class="wire" d="M123 457.3333333333333 H155" style="stroke:#17212b;stroke-width:2"/>
-<text x="116" y="462.3333333333333" font-size="16" text-anchor="end">X2</text>
-<path class="wire" d="M123 476.6666666666667 H155" style="stroke:#17212b;stroke-width:2"/>
-<text x="116" y="481.6666666666667" font-size="16" text-anchor="end">nX3</text>
-<path class="wire" d="M233 467.0 H281" style="stroke:#17212b;stroke-width:2"/>
-<text x="290" y="472.0" font-size="17" text-anchor="start">p13</text>
-<text x="194" y="430" font-size="15" text-anchor="middle" style="fill:#52616f">p13</text>
-<rect x="630" y="438" width="78" height="58" rx="0" fill="white" stroke="#17212b" stroke-width="2"/>
-<text x="669" y="474.0" font-size="23" text-anchor="middle">&amp;</text>
-<path class="wire" d="M598 457.3333333333333 H630" style="stroke:#17212b;stroke-width:2"/>
-<text x="591" y="462.3333333333333" font-size="16" text-anchor="end">X2</text>
-<path class="wire" d="M598 476.6666666666667 H630" style="stroke:#17212b;stroke-width:2"/>
-<text x="591" y="481.6666666666667" font-size="16" text-anchor="end">nX4</text>
-<path class="wire" d="M708 467.0 H756" style="stroke:#17212b;stroke-width:2"/>
-<text x="765" y="472.0" font-size="17" text-anchor="start">p14</text>
-<text x="669" y="430" font-size="15" text-anchor="middle" style="fill:#52616f">p14</text>
-<rect x="1105" y="438" width="78" height="104" rx="0" fill="white" stroke="#17212b" stroke-width="2"/>
-<text x="1144" y="497.0" font-size="23" text-anchor="middle">≥1</text>
-<path class="wire" d="M1073 458.8 H1105" style="stroke:#17212b;stroke-width:2"/>
-<text x="1066" y="463.8" font-size="16" text-anchor="end">p11</text>
-<path class="wire" d="M1073 479.6 H1105" style="stroke:#17212b;stroke-width:2"/>
-<text x="1066" y="484.6" font-size="16" text-anchor="end">p12</text>
-<path class="wire" d="M1073 500.4 H1105" style="stroke:#17212b;stroke-width:2"/>
-<text x="1066" y="505.4" font-size="16" text-anchor="end">p13</text>
-<path class="wire" d="M1073 521.2 H1105" style="stroke:#17212b;stroke-width:2"/>
-<text x="1066" y="526.2" font-size="16" text-anchor="end">p14</text>
-<path class="wire" d="M1183 490.0 H1231" style="stroke:#17212b;stroke-width:2"/>
-<text x="1240" y="495.0" font-size="17" text-anchor="start">F1</text>
-<text x="1144" y="430" font-size="15" text-anchor="middle" style="fill:#52616f">F1</text>
-<rect x="155" y="593" width="78" height="58" rx="0" fill="white" stroke="#17212b" stroke-width="2"/>
-<text x="194" y="629.0" font-size="23" text-anchor="middle">&amp;</text>
-<path class="wire" d="M123 612.3333333333334 H155" style="stroke:#17212b;stroke-width:2"/>
-<text x="116" y="617.3333333333334" font-size="16" text-anchor="end">X1</text>
-<path class="wire" d="M123 631.6666666666666 H155" style="stroke:#17212b;stroke-width:2"/>
-<text x="116" y="636.6666666666666" font-size="16" text-anchor="end">nX3</text>
-<path class="wire" d="M233 622.0 H281" style="stroke:#17212b;stroke-width:2"/>
-<text x="290" y="627.0" font-size="17" text-anchor="start">p21</text>
-<text x="194" y="585" font-size="15" text-anchor="middle" style="fill:#52616f">p21</text>
-<rect x="630" y="593" width="78" height="58" rx="0" fill="white" stroke="#17212b" stroke-width="2"/>
-<text x="669" y="629.0" font-size="23" text-anchor="middle">≥1</text>
-<path class="wire" d="M598 612.3333333333334 H630" style="stroke:#17212b;stroke-width:2"/>
-<text x="591" y="617.3333333333334" font-size="16" text-anchor="end">nX2</text>
-<path class="wire" d="M598 631.6666666666666 H630" style="stroke:#17212b;stroke-width:2"/>
-<text x="591" y="636.6666666666666" font-size="16" text-anchor="end">p21</text>
-<path class="wire" d="M708 622.0 H756" style="stroke:#17212b;stroke-width:2"/>
-<text x="765" y="627.0" font-size="17" text-anchor="start">F2</text>
-<text x="669" y="585" font-size="15" text-anchor="middle" style="fill:#52616f">F2</text>
-<rect x="1105" y="593" width="78" height="81" rx="0" fill="white" stroke="#17212b" stroke-width="2"/>
-<text x="1144" y="640.5" font-size="23" text-anchor="middle">≥1</text>
-<path class="wire" d="M1073 613.25 H1105" style="stroke:#17212b;stroke-width:2"/>
-<text x="1066" y="618.25" font-size="16" text-anchor="end">nX1</text>
-<path class="wire" d="M1073 633.5 H1105" style="stroke:#17212b;stroke-width:2"/>
-<text x="1066" y="638.5" font-size="16" text-anchor="end">X2</text>
-<path class="wire" d="M1073 653.75 H1105" style="stroke:#17212b;stroke-width:2"/>
-<text x="1066" y="658.75" font-size="16" text-anchor="end">X3</text>
-<path class="wire" d="M1183 633.5 H1231" style="stroke:#17212b;stroke-width:2"/>
-<text x="1240" y="638.5" font-size="17" text-anchor="start">F3</text>
-<text x="1144" y="585" font-size="15" text-anchor="middle" style="fill:#52616f">F3</text>
-<text x="725" y="757" font-size="17" text-anchor="middle">&amp; — И; ≥1 — ИЛИ; кружок на выходе — НЕ; 1 без кружка — повторитель.</text>
+<text x="710.0" y="34" font-size="24" text-anchor="middle" font-weight="bold">7. Схема формирования входных сигналов УЛУ</text>
+<text x="710" y="70" font-size="21" text-anchor="middle">Минимизированные функции F₁, F₂, F₃ в базисе И, ИЛИ, НЕ</text>
+<g data-net="X1">
+<path class="wire" d="M120 165 L140 165.0" style="stroke:#17212b;stroke-width:2"/>
+</g>
+<g data-net="nX1">
+<path class="wire" d="M200 165.0 L210 165" style="stroke:#17212b;stroke-width:2"/>
+</g>
+<text x="120" y="108" font-size="23" text-anchor="middle" font-weight="bold">X₁</text>
+<text x="220" y="220" font-size="20" text-anchor="start">¬X₁</text>
+<g data-net="X2">
+<path class="wire" d="M295 165 L315 165.0" style="stroke:#17212b;stroke-width:2"/>
+</g>
+<g data-net="nX2">
+<path class="wire" d="M375 165.0 L385 165" style="stroke:#17212b;stroke-width:2"/>
+</g>
+<text x="295" y="108" font-size="23" text-anchor="middle" font-weight="bold">X₂</text>
+<text x="395" y="220" font-size="20" text-anchor="start">¬X₂</text>
+<g data-net="X3">
+<path class="wire" d="M470 165 L490 165.0" style="stroke:#17212b;stroke-width:2"/>
+</g>
+<g data-net="nX3">
+<path class="wire" d="M550 165.0 L560 165" style="stroke:#17212b;stroke-width:2"/>
+</g>
+<text x="470" y="108" font-size="23" text-anchor="middle" font-weight="bold">X₃</text>
+<text x="570" y="220" font-size="20" text-anchor="start">¬X₃</text>
+<g data-net="X4">
+<path class="wire" d="M645 165 L665 165.0" style="stroke:#17212b;stroke-width:2"/>
+</g>
+<g data-net="nX4">
+<path class="wire" d="M725 165.0 L735 165" style="stroke:#17212b;stroke-width:2"/>
+</g>
+<text x="645" y="108" font-size="23" text-anchor="middle" font-weight="bold">X₄</text>
+<text x="745" y="220" font-size="20" text-anchor="start">¬X₄</text>
+<g data-net="nX1">
+<path class="wire" d="M210 318.3333333333333 L875 318.3333333333333" style="stroke:#17212b;stroke-width:2"/>
+</g>
+<g data-net="nX2">
+<path class="wire" d="M385 341.6666666666667 L875 341.6666666666667" style="stroke:#17212b;stroke-width:2"/>
+</g>
+<g data-net="X1">
+<path class="wire" d="M120 418.3333333333333 L875 418.3333333333333" style="stroke:#17212b;stroke-width:2"/>
+</g>
+<g data-net="X3">
+<path class="wire" d="M470 441.6666666666667 L875 441.6666666666667" style="stroke:#17212b;stroke-width:2"/>
+</g>
+<g data-net="X2">
+<path class="wire" d="M295 518.3333333333334 L875 518.3333333333334" style="stroke:#17212b;stroke-width:2"/>
+</g>
+<g data-net="nX3">
+<path class="wire" d="M560 541.6666666666666 L875 541.6666666666666" style="stroke:#17212b;stroke-width:2"/>
+</g>
+<g data-net="X2">
+<path class="wire" d="M295 618.3333333333334 L875 618.3333333333334" style="stroke:#17212b;stroke-width:2"/>
+</g>
+<g data-net="nX4">
+<path class="wire" d="M735 641.6666666666666 L875 641.6666666666666" style="stroke:#17212b;stroke-width:2"/>
+</g>
+<g data-net="p11">
+<path class="wire" d="M953 330.0 L1050 330.0 L1050 346.0 L1160 346.0" style="stroke:#17212b;stroke-width:2"/>
+</g>
+<text x="980" y="321.0" font-size="16" text-anchor="middle">p11</text>
+<g data-net="p12">
+<path class="wire" d="M953 430.0 L1050 430.0 L1050 422.0 L1160 422.0" style="stroke:#17212b;stroke-width:2"/>
+</g>
+<text x="980" y="421.0" font-size="16" text-anchor="middle">p12</text>
+<g data-net="p13">
+<path class="wire" d="M953 530.0 L1050 530.0 L1050 498.0 L1160 498.0" style="stroke:#17212b;stroke-width:2"/>
+</g>
+<text x="980" y="521.0" font-size="16" text-anchor="middle">p13</text>
+<g data-net="p14">
+<path class="wire" d="M953 630.0 L1050 630.0 L1050 574.0 L1160 574.0" style="stroke:#17212b;stroke-width:2"/>
+</g>
+<text x="980" y="621.0" font-size="16" text-anchor="middle">p14</text>
+<g data-net="X1">
+<path class="wire" d="M120 788.3333333333334 L875 788.3333333333334" style="stroke:#17212b;stroke-width:2"/>
+</g>
+<g data-net="nX3">
+<path class="wire" d="M560 811.6666666666666 L875 811.6666666666666" style="stroke:#17212b;stroke-width:2"/>
+</g>
+<g data-net="nX2">
+<path class="wire" d="M385 730 L1100 730 L1100 785.0 L1160 785.0" style="stroke:#17212b;stroke-width:2"/>
+</g>
+<g data-net="p21">
+<path class="wire" d="M953 800.0 L1050 800.0 L1050 815.0 L1160 815.0" style="stroke:#17212b;stroke-width:2"/>
+</g>
+<text x="980" y="791.0" font-size="16" text-anchor="middle">p21</text>
+<g data-net="nX1">
+<path class="wire" d="M210 982.5 L1160 982.5" style="stroke:#17212b;stroke-width:2"/>
+</g>
+<g data-net="X2">
+<path class="wire" d="M295 1015.0 L1160 1015.0" style="stroke:#17212b;stroke-width:2"/>
+</g>
+<g data-net="X3">
+<path class="wire" d="M470 1047.5 L1160 1047.5" style="stroke:#17212b;stroke-width:2"/>
+</g>
+<g data-net="X1">
+<path class="wire" d="M120 120 L120 788.3333333333334" style="stroke:#17212b;stroke-width:2"/>
+</g>
+<circle cx="120" cy="418.3333333333333" r="3.5" fill="#17212b" stroke="#17212b" stroke-width="2"/>
+<circle cx="120" cy="165" r="3.5" fill="#17212b" stroke="#17212b" stroke-width="2"/>
+<g data-net="nX1">
+<path class="wire" d="M210 165 L210 982.5" style="stroke:#17212b;stroke-width:2"/>
+</g>
+<circle cx="210" cy="318.3333333333333" r="3.5" fill="#17212b" stroke="#17212b" stroke-width="2"/>
+<g data-net="X2">
+<path class="wire" d="M295 120 L295 1015.0" style="stroke:#17212b;stroke-width:2"/>
+</g>
+<circle cx="295" cy="618.3333333333334" r="3.5" fill="#17212b" stroke="#17212b" stroke-width="2"/>
+<circle cx="295" cy="165" r="3.5" fill="#17212b" stroke="#17212b" stroke-width="2"/>
+<circle cx="295" cy="518.3333333333334" r="3.5" fill="#17212b" stroke="#17212b" stroke-width="2"/>
+<g data-net="nX2">
+<path class="wire" d="M385 165 L385 730" style="stroke:#17212b;stroke-width:2"/>
+</g>
+<circle cx="385" cy="341.6666666666667" r="3.5" fill="#17212b" stroke="#17212b" stroke-width="2"/>
+<g data-net="X3">
+<path class="wire" d="M470 120 L470 1047.5" style="stroke:#17212b;stroke-width:2"/>
+</g>
+<circle cx="470" cy="441.6666666666667" r="3.5" fill="#17212b" stroke="#17212b" stroke-width="2"/>
+<circle cx="470" cy="165" r="3.5" fill="#17212b" stroke="#17212b" stroke-width="2"/>
+<g data-net="nX3">
+<path class="wire" d="M560 165 L560 811.6666666666666" style="stroke:#17212b;stroke-width:2"/>
+</g>
+<circle cx="560" cy="541.6666666666666" r="3.5" fill="#17212b" stroke="#17212b" stroke-width="2"/>
+<g data-net="X4">
+<path class="wire" d="M645 120 L645 165" style="stroke:#17212b;stroke-width:2"/>
+</g>
+<g data-net="nX4">
+<path class="wire" d="M735 165 L735 641.6666666666666" style="stroke:#17212b;stroke-width:2"/>
+</g>
+<g data-net="F1">
+<path class="wire" d="M1238 460.0 L1340 460.0" style="stroke:#17212b;stroke-width:2"/>
+</g>
+<text x="1360" y="467.0" font-size="24" text-anchor="start" font-weight="bold">F₁</text>
+<g data-net="F2">
+<path class="wire" d="M1238 800.0 L1340 800.0" style="stroke:#17212b;stroke-width:2"/>
+</g>
+<text x="1360" y="807.0" font-size="24" text-anchor="start" font-weight="bold">F₂</text>
+<g data-net="F3">
+<path class="wire" d="M1238 1015.0 L1340 1015.0" style="stroke:#17212b;stroke-width:2"/>
+</g>
+<text x="1360" y="1022.0" font-size="24" text-anchor="start" font-weight="bold">F₃</text>
+<g data-gate="nX1" data-op="NOT">
+<rect x="140" y="140" width="50" height="50" rx="0" fill="white" stroke="#17212b" stroke-width="2"/>
+<text x="165.0" y="172.0" font-size="23" text-anchor="middle">1</text>
+<circle cx="195" cy="165.0" r="5" fill="white" stroke="#17212b" stroke-width="2"/>
+</g>
+<g data-gate="nX2" data-op="NOT">
+<rect x="315" y="140" width="50" height="50" rx="0" fill="white" stroke="#17212b" stroke-width="2"/>
+<text x="340.0" y="172.0" font-size="23" text-anchor="middle">1</text>
+<circle cx="370" cy="165.0" r="5" fill="white" stroke="#17212b" stroke-width="2"/>
+</g>
+<g data-gate="nX3" data-op="NOT">
+<rect x="490" y="140" width="50" height="50" rx="0" fill="white" stroke="#17212b" stroke-width="2"/>
+<text x="515.0" y="172.0" font-size="23" text-anchor="middle">1</text>
+<circle cx="545" cy="165.0" r="5" fill="white" stroke="#17212b" stroke-width="2"/>
+</g>
+<g data-gate="nX4" data-op="NOT">
+<rect x="665" y="140" width="50" height="50" rx="0" fill="white" stroke="#17212b" stroke-width="2"/>
+<text x="690.0" y="172.0" font-size="23" text-anchor="middle">1</text>
+<circle cx="720" cy="165.0" r="5" fill="white" stroke="#17212b" stroke-width="2"/>
+</g>
+<g data-gate="p11" data-op="AND">
+<rect x="875" y="295" width="78" height="70" rx="0" fill="white" stroke="#17212b" stroke-width="2"/>
+<text x="914.0" y="337.0" font-size="23" text-anchor="middle">&amp;</text>
+<text x="914.0" y="285" font-size="17" text-anchor="middle">p11</text>
+</g>
+<g data-gate="p12" data-op="AND">
+<rect x="875" y="395" width="78" height="70" rx="0" fill="white" stroke="#17212b" stroke-width="2"/>
+<text x="914.0" y="437.0" font-size="23" text-anchor="middle">&amp;</text>
+<text x="914.0" y="385" font-size="17" text-anchor="middle">p12</text>
+</g>
+<g data-gate="p13" data-op="AND">
+<rect x="875" y="495" width="78" height="70" rx="0" fill="white" stroke="#17212b" stroke-width="2"/>
+<text x="914.0" y="537.0" font-size="23" text-anchor="middle">&amp;</text>
+<text x="914.0" y="485" font-size="17" text-anchor="middle">p13</text>
+</g>
+<g data-gate="p14" data-op="AND">
+<rect x="875" y="595" width="78" height="70" rx="0" fill="white" stroke="#17212b" stroke-width="2"/>
+<text x="914.0" y="637.0" font-size="23" text-anchor="middle">&amp;</text>
+<text x="914.0" y="585" font-size="17" text-anchor="middle">p14</text>
+</g>
+<g data-gate="F1" data-op="OR">
+<rect x="1160" y="270" width="78" height="380" rx="0" fill="white" stroke="#17212b" stroke-width="2"/>
+<text x="1199.0" y="467.0" font-size="23" text-anchor="middle">1</text>
+<text x="1199.0" y="260" font-size="17" text-anchor="middle">F1</text>
+</g>
+<g data-gate="p21" data-op="AND">
+<rect x="875" y="765" width="78" height="70" rx="0" fill="white" stroke="#17212b" stroke-width="2"/>
+<text x="914.0" y="807.0" font-size="23" text-anchor="middle">&amp;</text>
+<text x="914.0" y="755" font-size="17" text-anchor="middle">p21</text>
+</g>
+<g data-gate="F2" data-op="OR">
+<rect x="1160" y="755" width="78" height="90" rx="0" fill="white" stroke="#17212b" stroke-width="2"/>
+<text x="1199.0" y="807.0" font-size="23" text-anchor="middle">1</text>
+<text x="1199.0" y="745" font-size="17" text-anchor="middle">F2</text>
+</g>
+<g data-gate="F3" data-op="OR">
+<rect x="1160" y="950" width="78" height="130" rx="0" fill="white" stroke="#17212b" stroke-width="2"/>
+<text x="1199.0" y="1022.0" font-size="23" text-anchor="middle">1</text>
+<text x="1199.0" y="940" font-size="17" text-anchor="middle">F3</text>
+</g>
+<path class="wire" d="M60 1120 H1360" style="stroke:#b2bec9;stroke-width:1"/>
+<text x="710" y="1160" font-size="23" text-anchor="middle">F₁ = ¬X₁ ¬X₂ ∨ X₁ X₃ ∨ X₂ ¬X₃ ∨ X₂ ¬X₄</text>
+<text x="710" y="1195" font-size="23" text-anchor="middle">F₂ = ¬X₂ ∨ X₁ ¬X₃</text>
+<text x="710" y="1230" font-size="23" text-anchor="middle">F₃ = ¬X₁ ∨ X₂ ∨ X₃</text>
+<circle cx="110" cy="1273" r="3.5" fill="#17212b" stroke="#17212b" stroke-width="2"/>
+<text x="130" y="1280" font-size="18" text-anchor="start">— соединение; пересечение без точки — без соединения.</text>
+<text x="710" y="1313" font-size="18" text-anchor="middle">&amp; — И; 1 — ИЛИ; 1 с кружком на выходе — НЕ. 4 НЕ + 5 И + 3 ИЛИ = 12 элементов.</text>
 </svg>

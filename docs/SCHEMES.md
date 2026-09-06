@@ -20,6 +20,7 @@
 | Схема формирования F1,F2,F3 | [PNG](../diagrams/07_input_logic.png) | [SVG](../diagrams/07_input_logic.svg) |
 | Общая аппаратная схема | [PNG](../diagrams/08a_hardware_overview.png) | [SVG](../diagrams/08a_hardware_overview.svg) |
 | Дешифратор состояний | [PNG](../diagrams/08b_state_decoder.png) | [SVG](../diagrams/08b_state_decoder.svg) |
+| Аппаратная реализация управляющего автомата УЛУ — таблица | [PNG](../diagrams/08g_hardware_table.png) | [SVG](../diagrams/08g_hardware_table.svg) |
 | Логика переходов | [PNG](../diagrams/08c_transition_logic.png) | [SVG](../diagrams/08c_transition_logic.svg) |
 | Функции возбуждения RS и альтернативные D | [PNG](../diagrams/08d_excitation_logic.png) | [SVG](../diagrams/08d_excitation_logic.svg) |
 | Три синхронных RS-триггера | [PNG](../diagrams/08e_register.png) | [SVG](../diagrams/08e_register.svg) |
@@ -81,6 +82,10 @@
 ## Дешифратор состояний
 
 ![Дешифратор состояний](../diagrams/08b_state_decoder.png)
+
+## Аппаратная реализация управляющего автомата УЛУ — таблица
+
+![Аппаратная реализация управляющего автомата УЛУ — таблица](../diagrams/08g_hardware_table.png)
 
 ## Логика переходов
 

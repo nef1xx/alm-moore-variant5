@@ -12,6 +12,7 @@ from ulu.model import OUTPUTS, NAMES, state_bits, next_state
 from ulu.netlist import GATES, Hardware, evaluate, clock_sr
 from ulu.reference import SOURCE, LSA, reference_next, source_event, lsa_event
 from ulu.cli import DEMO, parse_x
+from hardware_table import hardware_rows, markdown_table
 
 DATA = ROOT/'data'
 DATA.mkdir(exist_ok=True)
@@ -55,6 +56,14 @@ def main():
         excitations.append({**base, **{n:v[n] for n in ('N2','N1','N0','S2','R2','S1','R1','S0','R0')}})
     save_csv('transitions_formal.csv', list(formal[0]), formal)
     save_csv('excitation_table.csv', list(excitations[0]), excitations)
+    summary = hardware_rows()
+    save_json('hardware_implementation.json', {'reset': 0, 'bit_order': ['q2','q1','q0'],
+        'outputs_at': 'state_before', 'formal_cases_checked': 64, 'rows': summary})
+    document = ROOT/'docs/08_hardware.md'
+    begin, end = '<!-- hardware-table:start -->', '<!-- hardware-table:end -->'
+    before, generated = document.read_text(encoding='utf-8').split(begin)
+    _, after = generated.split(end)
+    document.write_text(before+begin+'\n'+markdown_table(summary)+'\n'+end+after, encoding='utf-8')
     for state, x in product(range(8), INPUTS):
         row = Hardware(state).tick(x)
         assert row['state_after'] == reference_next(state, original_f(x))

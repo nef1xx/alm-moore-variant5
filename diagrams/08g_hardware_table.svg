@@ -1,0 +1,145 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1520" height="980" viewBox="0 0 1520 980">
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#17212b"/></marker></defs>
+<rect width="1520" height="980" fill="white"/>
+<style>text{font-family:Arial,sans-serif;fill:#17212b} .wire{fill:none;stroke:#17212b;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}</style>
+<text x="760.0" y="34" font-size="24" text-anchor="middle" font-weight="bold">Аппаратная реализация управляющего автомата УЛУ</text>
+<text x="760" y="72" font-size="21" text-anchor="middle">Вариант 5. Автомат Мура S₀…S₆. RESET = 0. Код состояния: q₂q₁q₀.</text>
+<rect x="40" y="110" width="1440" height="662" rx="0" fill="white" stroke="#17212b" stroke-width="1.5"/>
+<path class="wire" d="M190 110 V772" style="stroke:#17212b;stroke-width:1"/>
+<path class="wire" d="M375 110 V772" style="stroke:#17212b;stroke-width:1"/>
+<path class="wire" d="M525 110 V772" style="stroke:#17212b;stroke-width:1"/>
+<path class="wire" d="M710 110 V772" style="stroke:#17212b;stroke-width:1"/>
+<path class="wire" d="M960 110 V772" style="stroke:#17212b;stroke-width:1"/>
+<path class="wire" d="M1195 110 V772" style="stroke:#17212b;stroke-width:1"/>
+<path class="wire" d="M40 184 H1480" style="stroke:#17212b;stroke-width:1"/>
+<path class="wire" d="M40 226 H1480" style="stroke:#17212b;stroke-width:1"/>
+<path class="wire" d="M40 268 H1480" style="stroke:#17212b;stroke-width:1"/>
+<path class="wire" d="M40 310 H1480" style="stroke:#17212b;stroke-width:1"/>
+<path class="wire" d="M40 352 H1480" style="stroke:#17212b;stroke-width:1"/>
+<path class="wire" d="M40 394 H1480" style="stroke:#17212b;stroke-width:1"/>
+<path class="wire" d="M40 436 H1480" style="stroke:#17212b;stroke-width:1"/>
+<path class="wire" d="M40 478 H1480" style="stroke:#17212b;stroke-width:1"/>
+<path class="wire" d="M40 520 H1480" style="stroke:#17212b;stroke-width:1"/>
+<path class="wire" d="M40 562 H1480" style="stroke:#17212b;stroke-width:1"/>
+<path class="wire" d="M40 604 H1480" style="stroke:#17212b;stroke-width:1"/>
+<path class="wire" d="M40 646 H1480" style="stroke:#17212b;stroke-width:1"/>
+<path class="wire" d="M40 688 H1480" style="stroke:#17212b;stroke-width:1"/>
+<path class="wire" d="M40 730 H1480" style="stroke:#17212b;stroke-width:1"/>
+<text x="115.0" y="139" font-size="21" text-anchor="middle">Начальное</text>
+<text x="115.0" y="167" font-size="21" text-anchor="middle">состояние</text>
+<text x="282.5" y="139" font-size="21" text-anchor="middle">Код нач.</text>
+<text x="282.5" y="167" font-size="21" text-anchor="middle">состояния</text>
+<text x="450.0" y="139" font-size="21" text-anchor="middle">Конечное</text>
+<text x="450.0" y="167" font-size="21" text-anchor="middle">состояние</text>
+<text x="617.5" y="139" font-size="21" text-anchor="middle">Код кон.</text>
+<text x="617.5" y="167" font-size="21" text-anchor="middle">состояния</text>
+<text x="835.0" y="139" font-size="21" text-anchor="middle">Входные сигналы</text>
+<text x="835.0" y="167" font-size="21" text-anchor="middle">Fᵢ</text>
+<text x="1077.5" y="139" font-size="21" text-anchor="middle">Выходные сигналы</text>
+<text x="1077.5" y="167" font-size="21" text-anchor="middle">Yⱼ</text>
+<text x="1337.5" y="139" font-size="21" text-anchor="middle">Функция</text>
+<text x="1337.5" y="167" font-size="21" text-anchor="middle">возбуждения RS</text>
+<text x="115.0" y="212" font-size="23" text-anchor="middle">S₀</text>
+<text x="282.5" y="212" font-size="23" text-anchor="middle">000</text>
+<text x="450.0" y="212" font-size="23" text-anchor="middle">S₀</text>
+<text x="617.5" y="212" font-size="23" text-anchor="middle">000</text>
+<text x="835.0" y="212" font-size="23" text-anchor="middle">F₂</text>
+<text x="1077.5" y="212" font-size="23" text-anchor="middle">—</text>
+<text x="1337.5" y="212" font-size="23" text-anchor="middle">—</text>
+<text x="115.0" y="254" font-size="23" text-anchor="middle">S₀</text>
+<text x="282.5" y="254" font-size="23" text-anchor="middle">000</text>
+<text x="450.0" y="254" font-size="23" text-anchor="middle">S₁</text>
+<text x="617.5" y="254" font-size="23" text-anchor="middle">001</text>
+<text x="835.0" y="254" font-size="23" text-anchor="middle">¬F₂</text>
+<text x="1077.5" y="254" font-size="23" text-anchor="middle">—</text>
+<text x="1337.5" y="254" font-size="23" text-anchor="middle">S₀</text>
+<text x="115.0" y="296" font-size="23" text-anchor="middle">S₁</text>
+<text x="282.5" y="296" font-size="23" text-anchor="middle">001</text>
+<text x="450.0" y="296" font-size="23" text-anchor="middle">S₂</text>
+<text x="617.5" y="296" font-size="23" text-anchor="middle">010</text>
+<text x="835.0" y="296" font-size="23" text-anchor="middle">1</text>
+<text x="1077.5" y="296" font-size="23" text-anchor="middle">Y₁ Y₃ Y₅</text>
+<text x="1337.5" y="296" font-size="23" text-anchor="middle">S₁ R₀</text>
+<text x="115.0" y="338" font-size="23" text-anchor="middle">S₂</text>
+<text x="282.5" y="338" font-size="23" text-anchor="middle">010</text>
+<text x="450.0" y="338" font-size="23" text-anchor="middle">S₃</text>
+<text x="617.5" y="338" font-size="23" text-anchor="middle">011</text>
+<text x="835.0" y="338" font-size="23" text-anchor="middle">¬F₂</text>
+<text x="1077.5" y="338" font-size="23" text-anchor="middle">Y₂ Y₄</text>
+<text x="1337.5" y="338" font-size="23" text-anchor="middle">S₀</text>
+<text x="115.0" y="380" font-size="23" text-anchor="middle">S₂</text>
+<text x="282.5" y="380" font-size="23" text-anchor="middle">010</text>
+<text x="450.0" y="380" font-size="23" text-anchor="middle">S₄</text>
+<text x="617.5" y="380" font-size="23" text-anchor="middle">100</text>
+<text x="835.0" y="380" font-size="23" text-anchor="middle">F₂(F₃∨F₁)</text>
+<text x="1077.5" y="380" font-size="23" text-anchor="middle">Y₂ Y₄</text>
+<text x="1337.5" y="380" font-size="23" text-anchor="middle">S₂ R₁</text>
+<text x="115.0" y="422" font-size="23" text-anchor="middle">S₂</text>
+<text x="282.5" y="422" font-size="23" text-anchor="middle">010</text>
+<text x="450.0" y="422" font-size="23" text-anchor="middle">S₅</text>
+<text x="617.5" y="422" font-size="23" text-anchor="middle">101</text>
+<text x="835.0" y="422" font-size="23" text-anchor="middle">F₂¬F₃¬F₁</text>
+<text x="1077.5" y="422" font-size="23" text-anchor="middle">Y₂ Y₄</text>
+<text x="1337.5" y="422" font-size="23" text-anchor="middle">S₂ R₁ S₀</text>
+<text x="115.0" y="464" font-size="23" text-anchor="middle">S₃</text>
+<text x="282.5" y="464" font-size="23" text-anchor="middle">011</text>
+<text x="450.0" y="464" font-size="23" text-anchor="middle">S₄</text>
+<text x="617.5" y="464" font-size="23" text-anchor="middle">100</text>
+<text x="835.0" y="464" font-size="23" text-anchor="middle">1</text>
+<text x="1077.5" y="464" font-size="23" text-anchor="middle">Y₁ Y₄</text>
+<text x="1337.5" y="464" font-size="23" text-anchor="middle">S₂ R₁ R₀</text>
+<text x="115.0" y="506" font-size="23" text-anchor="middle">S₄</text>
+<text x="282.5" y="506" font-size="23" text-anchor="middle">100</text>
+<text x="450.0" y="506" font-size="23" text-anchor="middle">S₅</text>
+<text x="617.5" y="506" font-size="23" text-anchor="middle">101</text>
+<text x="835.0" y="506" font-size="23" text-anchor="middle">1</text>
+<text x="1077.5" y="506" font-size="23" text-anchor="middle">Y₁ Y₅</text>
+<text x="1337.5" y="506" font-size="23" text-anchor="middle">S₀</text>
+<text x="115.0" y="548" font-size="23" text-anchor="middle">S₅</text>
+<text x="282.5" y="548" font-size="23" text-anchor="middle">101</text>
+<text x="450.0" y="548" font-size="23" text-anchor="middle">S₃</text>
+<text x="617.5" y="548" font-size="23" text-anchor="middle">011</text>
+<text x="835.0" y="548" font-size="23" text-anchor="middle">¬F₁¬F₂</text>
+<text x="1077.5" y="548" font-size="23" text-anchor="middle">Y₂ Y₃ Y₅</text>
+<text x="1337.5" y="548" font-size="23" text-anchor="middle">R₂ S₁</text>
+<text x="115.0" y="590" font-size="23" text-anchor="middle">S₅</text>
+<text x="282.5" y="590" font-size="23" text-anchor="middle">101</text>
+<text x="450.0" y="590" font-size="23" text-anchor="middle">S₄</text>
+<text x="617.5" y="590" font-size="23" text-anchor="middle">100</text>
+<text x="835.0" y="590" font-size="23" text-anchor="middle">¬F₁F₂F₃</text>
+<text x="1077.5" y="590" font-size="23" text-anchor="middle">Y₂ Y₃ Y₅</text>
+<text x="1337.5" y="590" font-size="23" text-anchor="middle">R₀</text>
+<text x="115.0" y="632" font-size="23" text-anchor="middle">S₅</text>
+<text x="282.5" y="632" font-size="23" text-anchor="middle">101</text>
+<text x="450.0" y="632" font-size="23" text-anchor="middle">S₅</text>
+<text x="617.5" y="632" font-size="23" text-anchor="middle">101</text>
+<text x="835.0" y="632" font-size="23" text-anchor="middle">¬F₁F₂¬F₃</text>
+<text x="1077.5" y="632" font-size="23" text-anchor="middle">Y₂ Y₃ Y₅</text>
+<text x="1337.5" y="632" font-size="23" text-anchor="middle">—</text>
+<text x="115.0" y="674" font-size="23" text-anchor="middle">S₅</text>
+<text x="282.5" y="674" font-size="23" text-anchor="middle">101</text>
+<text x="450.0" y="674" font-size="23" text-anchor="middle">S₆</text>
+<text x="617.5" y="674" font-size="23" text-anchor="middle">110</text>
+<text x="835.0" y="674" font-size="23" text-anchor="middle">F₁</text>
+<text x="1077.5" y="674" font-size="23" text-anchor="middle">Y₂ Y₃ Y₅</text>
+<text x="1337.5" y="674" font-size="23" text-anchor="middle">S₁ R₀</text>
+<text x="115.0" y="716" font-size="23" text-anchor="middle">S₆</text>
+<text x="282.5" y="716" font-size="23" text-anchor="middle">110</text>
+<text x="450.0" y="716" font-size="23" text-anchor="middle">S₆</text>
+<text x="617.5" y="716" font-size="23" text-anchor="middle">110</text>
+<text x="835.0" y="716" font-size="23" text-anchor="middle">1</text>
+<text x="1077.5" y="716" font-size="23" text-anchor="middle">—</text>
+<text x="1337.5" y="716" font-size="23" text-anchor="middle">—</text>
+<text x="115.0" y="758" font-size="23" text-anchor="middle">Неисп.</text>
+<text x="282.5" y="758" font-size="23" text-anchor="middle">111</text>
+<text x="450.0" y="758" font-size="23" text-anchor="middle">S₀</text>
+<text x="617.5" y="758" font-size="23" text-anchor="middle">000</text>
+<text x="835.0" y="758" font-size="23" text-anchor="middle">1</text>
+<text x="1077.5" y="758" font-size="23" text-anchor="middle">—</text>
+<text x="1337.5" y="758" font-size="23" text-anchor="middle">R₂ R₁ R₀</text>
+<text x="40" y="810" font-size="19" text-anchor="start">Yⱼ — активные выходы начального состояния; «—» — все сигналы в соответствующем столбце равны 0.</text>
+<text x="40" y="841" font-size="19" text-anchor="start">В столбце RS указаны только активные входы: S₂/R₂ → q₂, S₁/R₁ → q₁, S₀/R₀ → q₀.</text>
+<text x="40" y="872" font-size="19" text-anchor="start">¬ — НЕ; соседство F — И; ∨ — ИЛИ; 1 в столбце Fᵢ — любой набор F. «Неисп.» — код 111.</text>
+<text x="40" y="903" font-size="19" text-anchor="start">При RESET = 1: переход в S₀ на фронте CLK; Sₖ = 0, Rₖ = qₖ. В S₆ автомат остаётся до сброса.</text>
+<text x="40" y="934" font-size="19" text-anchor="start">Условия заданы на всех 8 наборах F; ветка S₅ → S₄ не достигается при реальных F(X).</text>
+</svg>

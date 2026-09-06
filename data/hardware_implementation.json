@@ -1,0 +1,138 @@
+{
+  "reset": 0,
+  "bit_order": [
+    "q2",
+    "q1",
+    "q0"
+  ],
+  "outputs_at": "state_before",
+  "formal_cases_checked": 64,
+  "rows": [
+    {
+      "state": "S0",
+      "code": "000",
+      "next": "S0",
+      "next_code": "000",
+      "condition": "F2",
+      "outputs": "—",
+      "excitation": "—"
+    },
+    {
+      "state": "S0",
+      "code": "000",
+      "next": "S1",
+      "next_code": "001",
+      "condition": "¬F2",
+      "outputs": "—",
+      "excitation": "S0"
+    },
+    {
+      "state": "S1",
+      "code": "001",
+      "next": "S2",
+      "next_code": "010",
+      "condition": "1",
+      "outputs": "Y1 Y3 Y5",
+      "excitation": "S1 R0"
+    },
+    {
+      "state": "S2",
+      "code": "010",
+      "next": "S3",
+      "next_code": "011",
+      "condition": "¬F2",
+      "outputs": "Y2 Y4",
+      "excitation": "S0"
+    },
+    {
+      "state": "S2",
+      "code": "010",
+      "next": "S4",
+      "next_code": "100",
+      "condition": "F2(F3∨F1)",
+      "outputs": "Y2 Y4",
+      "excitation": "S2 R1"
+    },
+    {
+      "state": "S2",
+      "code": "010",
+      "next": "S5",
+      "next_code": "101",
+      "condition": "F2¬F3¬F1",
+      "outputs": "Y2 Y4",
+      "excitation": "S2 R1 S0"
+    },
+    {
+      "state": "S3",
+      "code": "011",
+      "next": "S4",
+      "next_code": "100",
+      "condition": "1",
+      "outputs": "Y1 Y4",
+      "excitation": "S2 R1 R0"
+    },
+    {
+      "state": "S4",
+      "code": "100",
+      "next": "S5",
+      "next_code": "101",
+      "condition": "1",
+      "outputs": "Y1 Y5",
+      "excitation": "S0"
+    },
+    {
+      "state": "S5",
+      "code": "101",
+      "next": "S3",
+      "next_code": "011",
+      "condition": "¬F1¬F2",
+      "outputs": "Y2 Y3 Y5",
+      "excitation": "R2 S1"
+    },
+    {
+      "state": "S5",
+      "code": "101",
+      "next": "S4",
+      "next_code": "100",
+      "condition": "¬F1F2F3",
+      "outputs": "Y2 Y3 Y5",
+      "excitation": "R0"
+    },
+    {
+      "state": "S5",
+      "code": "101",
+      "next": "S5",
+      "next_code": "101",
+      "condition": "¬F1F2¬F3",
+      "outputs": "Y2 Y3 Y5",
+      "excitation": "—"
+    },
+    {
+      "state": "S5",
+      "code": "101",
+      "next": "S6",
+      "next_code": "110",
+      "condition": "F1",
+      "outputs": "Y2 Y3 Y5",
+      "excitation": "S1 R0"
+    },
+    {
+      "state": "S6",
+      "code": "110",
+      "next": "S6",
+      "next_code": "110",
+      "condition": "1",
+      "outputs": "—",
+      "excitation": "—"
+    },
+    {
+      "state": "Неисп.",
+      "code": "111",
+      "next": "S0",
+      "next_code": "000",
+      "condition": "1",
+      "outputs": "—",
+      "excitation": "R2 R1 R0"
+    }
+  ]
+}
