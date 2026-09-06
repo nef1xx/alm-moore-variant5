@@ -13,6 +13,7 @@ from ulu.netlist import GATES, Hardware, evaluate, clock_sr
 from ulu.reference import SOURCE, LSA, reference_next, source_event, lsa_event
 from ulu.cli import DEMO, parse_x
 from hardware_table import hardware_rows, markdown_table
+from ulu.derived import output_functions, excitation_functions
 
 DATA = ROOT/'data'
 DATA.mkdir(exist_ok=True)
@@ -80,6 +81,10 @@ def main():
         v = evaluate(state, reset=reset, f_override=f)
         assert clock_sr(state,v) == reference_next(state,f,reset)
         assert all(not (v[f'S{k}'] and v[f'R{k}']) for k in (2,1,0))
+        assert output_functions(state) == OUTPUTS[state]
+        s, r = excitation_functions(state, f, reset)
+        assert s == tuple(v[f'S{k}'] for k in (2,1,0))
+        assert r == tuple(v[f'R{k}'] for k in (2,1,0))
     h, trace = Hardware(), []
     for i, x in enumerate(DEMO, 1):
         row = h.tick(parse_x(x))
@@ -94,6 +99,7 @@ def main():
     save_json('verification.json', {'status': 'PASS', 'input_rows':16,
         'lsa_next_event_cases':lsa_checks, 'formal_state_input_cases':64,
         'formal_state_input_reset_cases':128, 'integrated_state_x_cases':128,
+        'derived_output_code_cases':8, 'derived_rs_state_f_reset_cases':128,
         'reachable_F':sorted({original_f(x) for x in INPUTS}),
         'minimum_sop_costs':[[c['minimum_terms'],c['minimum_literals']] for c in certificates],
         'note':'Детерминированные проверки этого файла; дополнительные 10 000 тактов проверяет unittest.'})

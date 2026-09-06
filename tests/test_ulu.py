@@ -6,6 +6,7 @@ from ulu.model import OUTPUTS, Moore, next_state
 from ulu.netlist import GATES, Hardware, clock_sr, evaluate
 from ulu.reference import LSA, source_event, lsa_event, reference_next
 from ulu.minimize import certificate
+from ulu.derived import output_functions, excitation_functions
 
 
 class LogicTests(unittest.TestCase):
@@ -31,6 +32,26 @@ class LogicTests(unittest.TestCase):
 
 
 class AutomatonTests(unittest.TestCase):
+    def test_derived_output_functions(self):
+        for state in range(8):
+            self.assertEqual(output_functions(state), OUTPUTS[state], state)
+
+    def test_derived_rs_functions(self):
+        for state, f, reset in product(range(8), FORMAL_F, (False, True)):
+            s, r = excitation_functions(state, f, reset)
+            target = reference_next(state, f, reset)
+            expected_s, expected_r = [], []
+            for k in (2, 1, 0):
+                old, new = state >> k & 1, target >> k & 1
+                expected_s.append(int(not old and new))
+                expected_r.append(int(old and not new))
+            self.assertEqual(s, tuple(expected_s), (state,f,reset))
+            self.assertEqual(r, tuple(expected_r), (state,f,reset))
+            self.assertTrue(all(not (si and ri) for si,ri in zip(s,r)))
+            wires = evaluate(state, f_override=f, reset=reset)
+            self.assertEqual(s, tuple(wires[f'S{k}'] for k in (2,1,0)))
+            self.assertEqual(r, tuple(wires[f'R{k}'] for k in (2,1,0)))
+
     def test_lsa_against_original(self):
         for index, t in enumerate(LSA):
             if len(t) < 3:

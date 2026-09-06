@@ -24,6 +24,8 @@
 
 Все 20 иллюстраций, включая [таблицу аппаратной реализации](diagrams/08g_hardware_table.png), доступны в [галерее](docs/SCHEMES.md) и [едином PDF-альбоме](output/ALM_variant5_schemes.pdf). Каждая сохранена в **PNG для просмотра и SVG для редактирования**. CSV и JSON лежат в [data](data), формулы и инструкция — в [docs](docs), программа — в [ulu](ulu).
 
+Добавлено [решение с выводом функций Y1–Y5 и возбуждения RS через α1,α2,α3](docs/08h_output_rs_derivation.md): исходные конъюнкции кодов, выбор переходов, упрощения и учёт RESET. [Версия для печати](output/pdf/ALM_variant5_output_rs_derivation.pdf).
+
 ## Полученные минимальные функции
 
 $$F_1=\overline{X_1}\overline{X_2}\vee X_1X_3\vee X_2\overline{X_3}\vee X_2\overline{X_4}$$

@@ -20,6 +20,7 @@
 - `ulu/reference.py`: независимые интерпретаторы; не заменять вызовом `next_state`.
 - `ulu/model.py`: поведенческая модель.
 - `ulu/netlist.py`: список вентилей и модель RS-регистра.
+- `ulu/derived.py`: независимое вычисление сокращённых Y и S/R из решения docs/08h_output_rs_derivation.md. В нём α1=q2, α2=q1, α3=q0; Sα1/Rα1 соответствуют S2/R2 схемы. PDF решения строит scripts/build_derivation_pdf.py.
 - `ulu/minimize.py`: точный сертификат минимальной ДНФ.
 - `scripts/build_data.py`: проверяет и пересоздаёт CSV/JSON.
 - `scripts/hardware_table.py`: сводные строки аппаратной реализации; build_data.py проверяет их на всех формальных F и обновляет таблицу в docs/08_hardware.md между маркерами hardware-table. Рисунок таблицы — 08g_hardware_table.

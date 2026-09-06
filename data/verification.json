@@ -5,6 +5,8 @@
   "formal_state_input_cases": 64,
   "formal_state_input_reset_cases": 128,
   "integrated_state_x_cases": 128,
+  "derived_output_code_cases": 8,
+  "derived_rs_state_f_reset_cases": 128,
   "reachable_F": [
     [
       0,
